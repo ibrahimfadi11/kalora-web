@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forbrændingsberegner – kalorier ved løb, gåtur og træning | Kalora</title>
+<meta name="description" content="Gratis forbrændingsberegner: se hvor mange kalorier du forbrænder ved gåtur, løb, cykling, svømning og styrketræning ud fra tid og vægt.">
+<meta property="og:title" content="Forbrændingsberegner – kalorier ved løb, gåtur og træning | Kalora">
+<meta property="og:description" content="Gratis forbrændingsberegner: se hvor mange kalorier du forbrænder ved gåtur, løb, cykling, svømning og styrketræning ud fra tid og vægt.">
+<meta property="og:url" content="https://kalora.dk/beregner/forbraending/">
+<meta name="theme-color" content="#FFF6EE">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="da_DK">
+<meta property="og:site_name" content="Kalora">
+<meta property="og:image" content="https://kalora.dk/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kalora.dk/beregner/forbraending/">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=9">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://kalora.dk/#org", "name": "Kalora", "url": "https://kalora.dk/", "logo": "https://kalora.dk/img/icon-512.png", "email": "support@kalora.dk"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hvordan regner man kalorieforbrænding ud?", "acceptedAnswer": {"@type": "Answer", "text": "Med MET-værdier: kalorier = MET × vægt i kg × tid i timer. MET fortæller, hvor mange gange mere energi en aktivitet koster end at sidde stille."}}, {"@type": "Question", "name": "Hvor kommer MET-værdierne fra?", "acceptedAnswer": {"@type": "Answer", "text": "Fra Compendium of Physical Activities, en stor forskningsoversigt over energiforbruget ved hundredvis af aktiviteter. Kalora bruger de samme værdier i appen."}}, {"@type": "Question", "name": "Hvorfor forbrænder jeg mere end min ven?", "acceptedAnswer": {"@type": "Answer", "text": "Jo mere du vejer, jo mere energi koster det at flytte kroppen. Tempo og hvor hårdt du arbejder betyder også meget."}}, {"@type": "Question", "name": "Skal jeg spise kalorierne igen?", "acceptedAnswer": {"@type": "Answer", "text": "Det er op til dig. Vil du tabe dig, kan du lade være. I Kalora vælger du selv, om motion skal give ekstra kalorier til dagens mål."}}]}, {"@type": "WebApplication", "name": "Hvor mange kalorier forbrænder du?", "url": "https://kalora.dk/beregner/forbraending/", "applicationCategory": "HealthApplication", "operatingSystem": "Alle", "inLanguage": "da", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "DKK"}}]}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Kalora forside"><img src="/img/icon-180.png" alt=""><span class="name">Kalora</span></a>
+    <nav class="links" aria-label="Menu">
+      <a href="/funktioner/">Funktioner</a>
+      <a href="/saadan-virker-det/">Sådan virker det</a>
+      <a href="/beregner/" aria-current="page">Beregner</a>
+      <a href="/guides/">Guides</a>
+      <a href="/support/">Hjælp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-head">
+    <p class="more" style="margin:0 0 10px"><a href="/beregner/">← Alle beregnere</a></p>
+    <p class="eyebrow">Gratis beregner</p>
+    <h1>Hvor mange kalorier forbrænder du?</h1>
+    <p class="lead">Vælg aktivitet, tid og din vægt, så regner vi ud, hvor mange kalorier du cirka forbrænder.</p>
+  </div>
+  <section style="padding-top:24px">
+    <div class="wrap">
+      <div class="calc card">
+        <form id="f" novalidate><label class="field">Aktivitet<select name="a"><option value="3">Gåtur, roligt (ca. 4 km/t)</option><option value="4.3" selected>Gåtur, rask (ca. 5,5 km/t)</option><option value="5">Gåtur, meget rask (ca. 6,5 km/t)</option><option value="8.3">Løb, jog (ca. 8 km/t)</option><option value="9.8">Løb, friskt (ca. 10 km/t)</option><option value="11.8">Løb, hurtigt (12 km/t eller mere)</option><option value="4">Cykling, roligt (under 16 km/t)</option><option value="8">Cykling, friskt (ca. 20 km/t)</option><option value="10">Cykling, hurtigt (25 km/t eller mere)</option><option value="3.5">Styrketræning, let</option><option value="6">Styrketræning, hårdt</option><option value="6">Svømning, roligt</option><option value="9.8">Svømning, hurtigt</option><option value="7">Fodbold, for sjov</option><option value="10">Fodbold, kamp</option><option value="2.5">Yoga</option></select></label><div class="row3" style="grid-template-columns:1fr 1fr"><label class="field">Tid<span class="inp"><input name="m" inputmode="numeric" placeholder="30" autocomplete="off"><em>min</em></span></label><label class="field">Vægt<span class="inp"><input name="w" inputmode="decimal" placeholder="75" autocomplete="off"><em>kg</em></span></label></div></form>
+        <div class="result" id="r" aria-live="polite"><p class="muted">Udfyld felterne, så regner vi det ud.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="band"><div class="wrap narrow doc article" style="padding-bottom:10px"><h2 style="margin-top:0">Eksempler for en person på 75 kg</h2><table><thead><tr><th>Aktivitet, 30 minutter</th><th>Ca. kalorier</th></tr></thead><tbody><tr><td>Gåtur, rask (ca. 5,5 km/t)</td><td>161 kcal</td></tr><tr><td>Løb, friskt (ca. 10 km/t)</td><td>368 kcal</td></tr><tr><td>Cykling, friskt (ca. 20 km/t)</td><td>300 kcal</td></tr><tr><td>Styrketræning, hårdt</td><td>225 kcal</td></tr><tr><td>Svømning, roligt</td><td>225 kcal</td></tr></tbody></table><p>MET-værdierne er fra <em>Compendium of Physical Activities</em>. <a href="/saadan-virker-det/#motion">Se hvordan Kalora regner motion og skridt</a>.</p></div></section>
+  <section><div class="wrap narrow"><h2>Spørgsmål og svar</h2><details><summary>Hvordan regner man kalorieforbrænding ud?</summary><p>Med MET-værdier: kalorier = MET × vægt i kg × tid i timer. MET fortæller, hvor mange gange mere energi en aktivitet koster end at sidde stille.</p></details><details><summary>Hvor kommer MET-værdierne fra?</summary><p>Fra Compendium of Physical Activities, en stor forskningsoversigt over energiforbruget ved hundredvis af aktiviteter. Kalora bruger de samme værdier i appen.</p></details><details><summary>Hvorfor forbrænder jeg mere end min ven?</summary><p>Jo mere du vejer, jo mere energi koster det at flytte kroppen. Tempo og hvor hårdt du arbejder betyder også meget.</p></details><details><summary>Skal jeg spise kalorierne igen?</summary><p>Det er op til dig. Vil du tabe dig, kan du lade være. I Kalora vælger du selv, om motion skal give ekstra kalorier til dagens mål.</p></details></div></section>
+  <section><div class="wrap"><h2>Flere gratis beregnere</h2><p class="sub">Alle regner i din browser. Intet bliver gemt eller sendt.</p><div class="guides"><a class="card" href="/beregner/"><p class="kicker">Gratis</p><h3>Kalorieberegner</h3><p>Dit daglige kaloriemål og makroer</p><span class="read">Prøv den →</span></a><a class="card" href="/beregner/bmi/"><p class="kicker">Gratis</p><h3>BMI-beregner</h3><p>Dit BMI og din normalvægt</p><span class="read">Prøv den →</span></a><a class="card" href="/beregner/protein/"><p class="kicker">Gratis</p><h3>Proteinberegner</h3><p>Hvor meget protein du skal have</p><span class="read">Prøv den →</span></a></div></div></section>
+  <section><div class="wrap narrow"><div class="app-cta">
+    <img src="/img/icon-180.png" alt="">
+    <div>
+      <p><strong>Prøv Kalora gratis.</strong> Scan stregkoden, find danske varer og se dit kalorie- og proteinmål hver dag.</p>
+      <a class="btn" href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora</a>
+    </div>
+  </div></div></section>
+</main>
+<script>(function(){function num(v){var n=parseFloat(String(v).replace(',','.'));return isFinite(n)?n:NaN}function f1(n){return (Math.round(n*10)/10).toLocaleString('da-DK')}function f0(n){return Math.round(n).toLocaleString('da-DK')}var form=document.getElementById('f'),out=document.getElementById('r');function run(){var d=new FormData(form),met=num(d.get('a')),m=num(d.get('m')),w=num(d.get('w'));
+if(!(m>0&&m<=600)||!(w>=30&&w<=300)){out.innerHTML='<p class="muted">Skriv tid i minutter og din vægt i kg.</p>';return}
+var k=met*w*m/60;
+out.innerHTML='<p class="label">Du forbrænder cirka</p><p class="big">'+f0(k)+' <span>kcal</span></p><p class="muted" style="margin-top:0">Det svarer til ca. '+f0(k/2.1)+' g rugbrød eller '+f0(k/0.52)+' g æble.</p><p class="muted">Regnet som MET × vægt × timer. Det er et skøn.</p>'}form.addEventListener('input',run);form.addEventListener('change',run);run();})();</script>
+
+<footer class="big">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><img src="/img/icon-180.png" alt="">Kalora</a>
+        <p>Dansk kalorietæller til iPhone. Rigtige tal fra rigtige kilder.</p>
+      </div>
+      <div>
+        <h4>Appen</h4>
+        <ul>
+          <li><a href="/funktioner/">Funktioner</a></li>
+          <li><a href="/saadan-virker-det/">Sådan virker det</a></li>
+          <li><a href="/beregner/">Kalorieberegner</a></li>
+          <li><a href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/guides/taelle-kalorier/">Tæl kalorier</a></li>
+          <li><a href="/guides/protein/">Protein</a></li>
+          <li><a href="/guides/makroer/">Makroer</a></li>
+          <li><a href="/guides/deklaration/">Læs en deklaration</a></li>
+          <li><a href="/kalorier/">Kalorietabel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kalora</h4>
+        <ul>
+          <li><a href="/om/">Om Kalora</a></li>
+          <li><a href="/support/">Hjælp og kontakt</a></li>
+          <li><a href="/privatliv/">Privatlivspolitik</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Kalora</span>
+      <span>Næringsdata fra DTU Fødevareinstituttet (CC BY 4.0) og Open Food Facts</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

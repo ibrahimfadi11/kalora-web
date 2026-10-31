@@ -246,3 +246,33 @@ nav.links a[aria-current] { color: var(--text); border-bottom-color: var(--prima
 @media (max-width: 370px) { nav.links { font-size: 12.5px; } }
 @media (max-width: 340px) { header.top .wrap { padding: 0 12px; } nav.links { font-size: 11.5px; } }
 @media (max-width: 480px) { nav.links { font-size: 13.5px; } } @media (max-width: 370px) { nav.links { font-size: 12px; } } @media (max-width: 340px) { nav.links { font-size: 11px; } }
+
+/* Kalorietabel */
+.food-macros { grid-template-columns: repeat(4, 1fr); margin: 18px 0 8px; }
+.food-macros .m { background: var(--card); border: 1px solid var(--border); padding: 14px 8px; }
+.food-macros .m b { font-size: 24px; }
+.simlist { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.simlist li { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; display: flex; justify-content: space-between; gap: 10px; font-size: 15px; }
+.simlist a { text-decoration: none; color: var(--text); font-weight: 600; }
+.simlist span { color: var(--muted); white-space: nowrap; }
+.ftable .fgroup { padding: 18px 0 0; }
+.ftable .fgroup h2 { font-size: 21px; margin: 10px 0 4px; }
+.ftable table td:not(:first-child), .ftable table th:not(:first-child) { text-align: right; white-space: nowrap; }
+.ftable table a { color: var(--text); text-decoration: none; }
+.ftable table a:hover { color: var(--primary-text); text-decoration: underline; }
+.search { margin: 22px 0 6px; }
+.search input { font-size: 18px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+details.groups { margin: 10px 0 0; }
+details.groups .jump { margin-top: 12px; }
+@media (max-width: 600px) {
+  .food-macros { grid-template-columns: repeat(2, 1fr); }
+  .simlist { grid-template-columns: 1fr; }
+  .ftable table th:nth-child(4), .ftable table td:nth-child(4), .ftable table th:nth-child(5), .ftable table td:nth-child(5) { display: none; }
+}
+@media (max-width: 360px) { .food .article table, .food table { font-size: 12px; } .food th, .food td { padding: 6px 5px; } }
+.ftable details.fgroup { padding: 13px 16px; margin-bottom: 8px; }
+.ftable details.fgroup summary { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-size: 16px; }
+.ftable details.fgroup summary span { color: var(--muted); font-weight: 500; font-size: 14px; }
+.ftable details.fgroup table { margin-top: 12px; }
+.ftable .gtitle { font-size: 20px; margin: 26px 0 12px; }

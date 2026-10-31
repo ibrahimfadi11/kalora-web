@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMI-beregner – beregn dit BMI og din normalvægt | Kalora</title>
+<meta name="description" content="Gratis BMI-beregner: beregn dit BMI ud fra højde og vægt, se om du er undervægtig, normalvægtig eller overvægtig, og find normalvægten for din højde.">
+<meta property="og:title" content="BMI-beregner – beregn dit BMI og din normalvægt | Kalora">
+<meta property="og:description" content="Gratis BMI-beregner: beregn dit BMI ud fra højde og vægt, se om du er undervægtig, normalvægtig eller overvægtig, og find normalvægten for din højde.">
+<meta property="og:url" content="https://kalora.dk/beregner/bmi/">
+<meta name="theme-color" content="#FFF6EE">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="da_DK">
+<meta property="og:site_name" content="Kalora">
+<meta property="og:image" content="https://kalora.dk/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kalora.dk/beregner/bmi/">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=9">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://kalora.dk/#org", "name": "Kalora", "url": "https://kalora.dk/", "logo": "https://kalora.dk/img/icon-512.png", "email": "support@kalora.dk"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Hvad er et normalt BMI?", "acceptedAnswer": {"@type": "Answer", "text": "For voksne regnes et BMI på 18,5–24,9 som normalvægt efter WHO's inddeling. 25–29,9 er overvægt, og 30 eller mere er svær overvægt."}}, {"@type": "Question", "name": "Hvordan regner man BMI ud?", "acceptedAnswer": {"@type": "Answer", "text": "Vægt i kg divideret med højden i meter ganget med sig selv. 75 kg og 1,70 m giver 75 ÷ (1,70 × 1,70) = 26,0."}}, {"@type": "Question", "name": "Gælder BMI for alle?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. BMI passer dårligt til meget muskuløse personer, ældre, gravide og børn under 18 år, hvor man bruger særlige vækstkurver."}}, {"@type": "Question", "name": "Gemmer I mine tal?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. Beregningen sker kun i din browser."}}]}, {"@type": "WebApplication", "name": "BMI-beregner", "url": "https://kalora.dk/beregner/bmi/", "applicationCategory": "HealthApplication", "operatingSystem": "Alle", "inLanguage": "da", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "DKK"}}]}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Kalora forside"><img src="/img/icon-180.png" alt=""><span class="name">Kalora</span></a>
+    <nav class="links" aria-label="Menu">
+      <a href="/funktioner/">Funktioner</a>
+      <a href="/saadan-virker-det/">Sådan virker det</a>
+      <a href="/beregner/" aria-current="page">Beregner</a>
+      <a href="/guides/">Guides</a>
+      <a href="/support/">Hjælp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-head">
+    <p class="more" style="margin:0 0 10px"><a href="/beregner/">← Alle beregnere</a></p>
+    <p class="eyebrow">Gratis beregner</p>
+    <h1>BMI-beregner</h1>
+    <p class="lead">Skriv din højde og vægt, så får du dit BMI, hvad det betyder, og hvilket vægtinterval der svarer til normalvægt for din højde.</p>
+  </div>
+  <section style="padding-top:24px">
+    <div class="wrap">
+      <div class="calc card">
+        <form id="f" novalidate><div class="row3" style="grid-template-columns:1fr 1fr"><label class="field">Højde<span class="inp"><input name="h" inputmode="numeric" placeholder="170" autocomplete="off"><em>cm</em></span></label><label class="field">Vægt<span class="inp"><input name="w" inputmode="decimal" placeholder="75" autocomplete="off"><em>kg</em></span></label></div></form>
+        <div class="result" id="r" aria-live="polite"><p class="muted">Udfyld felterne, så regner vi det ud.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="band"><div class="wrap narrow doc article" style="padding-bottom:10px"><h2 style="margin-top:0">BMI-skalaen</h2><table><thead><tr><th>BMI</th><th>Betegnelse</th></tr></thead><tbody><tr><td>Under 18,5</td><td>Undervægt</td></tr><tr><td>18,5–24,9</td><td>Normalvægt</td></tr><tr><td>25–29,9</td><td>Overvægt</td></tr><tr><td>30 eller mere</td><td>Svær overvægt</td></tr></tbody></table><p>Inddelingen er WHO's og gælder voksne. BMI er et groft pejlemærke, som ikke skelner mellem fedt og muskler. <a href="/guides/bmi/">Læs guiden om BMI</a>.</p></div></section>
+  <section><div class="wrap narrow"><h2>Spørgsmål og svar</h2><details><summary>Hvad er et normalt BMI?</summary><p>For voksne regnes et BMI på 18,5–24,9 som normalvægt efter WHO's inddeling. 25–29,9 er overvægt, og 30 eller mere er svær overvægt.</p></details><details><summary>Hvordan regner man BMI ud?</summary><p>Vægt i kg divideret med højden i meter ganget med sig selv. 75 kg og 1,70 m giver 75 ÷ (1,70 × 1,70) = 26,0.</p></details><details><summary>Gælder BMI for alle?</summary><p>Nej. BMI passer dårligt til meget muskuløse personer, ældre, gravide og børn under 18 år, hvor man bruger særlige vækstkurver.</p></details><details><summary>Gemmer I mine tal?</summary><p>Nej. Beregningen sker kun i din browser.</p></details></div></section>
+  <section><div class="wrap"><h2>Flere gratis beregnere</h2><p class="sub">Alle regner i din browser. Intet bliver gemt eller sendt.</p><div class="guides"><a class="card" href="/beregner/"><p class="kicker">Gratis</p><h3>Kalorieberegner</h3><p>Dit daglige kaloriemål og makroer</p><span class="read">Prøv den →</span></a><a class="card" href="/beregner/protein/"><p class="kicker">Gratis</p><h3>Proteinberegner</h3><p>Hvor meget protein du skal have</p><span class="read">Prøv den →</span></a><a class="card" href="/beregner/forbraending/"><p class="kicker">Gratis</p><h3>Forbrændingsberegner</h3><p>Kalorier ved løb, gåtur og træning</p><span class="read">Prøv den →</span></a></div></div></section>
+  <section><div class="wrap narrow"><div class="app-cta">
+    <img src="/img/icon-180.png" alt="">
+    <div>
+      <p><strong>Prøv Kalora gratis.</strong> Scan stregkoden, find danske varer og se dit kalorie- og proteinmål hver dag.</p>
+      <a class="btn" href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora</a>
+    </div>
+  </div></div></section>
+</main>
+<script>(function(){function num(v){var n=parseFloat(String(v).replace(',','.'));return isFinite(n)?n:NaN}function f1(n){return (Math.round(n*10)/10).toLocaleString('da-DK')}function f0(n){return Math.round(n).toLocaleString('da-DK')}var form=document.getElementById('f'),out=document.getElementById('r');var CAT=[[18.5,'Undervægt'],[25,'Normalvægt'],[30,'Overvægt'],[999,'Svær overvægt']];
+function run(){var d=new FormData(form),h=num(d.get('h'))/100,w=num(d.get('w'));
+if(!(h>=1.2&&h<=2.3)||!(w>=30&&w<=300)){out.innerHTML='<p class="muted">Skriv højde i cm (fx 170) og vægt i kg (fx 75).</p>';return}
+var b=w/(h*h),c=CAT.find(function(x){return b<x[0]})[1],lo=18.5*h*h,hi=24.9*h*h;
+out.innerHTML='<p class="label">Dit BMI</p><p class="big">'+f1(b)+' <span>'+c+'</span></p><p class="muted" style="margin-top:0">Normalvægt for din højde er ca. <strong>'+f0(lo)+'–'+f0(hi)+' kg</strong> (BMI 18,5–24,9).</p><p class="muted">BMI passer ikke på alle, fx hvis du har mange muskler. <a href="/guides/bmi/">Læs mere</a>.</p>'}form.addEventListener('input',run);form.addEventListener('change',run);run();})();</script>
+
+<footer class="big">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><img src="/img/icon-180.png" alt="">Kalora</a>
+        <p>Dansk kalorietæller til iPhone. Rigtige tal fra rigtige kilder.</p>
+      </div>
+      <div>
+        <h4>Appen</h4>
+        <ul>
+          <li><a href="/funktioner/">Funktioner</a></li>
+          <li><a href="/saadan-virker-det/">Sådan virker det</a></li>
+          <li><a href="/beregner/">Kalorieberegner</a></li>
+          <li><a href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/guides/taelle-kalorier/">Tæl kalorier</a></li>
+          <li><a href="/guides/protein/">Protein</a></li>
+          <li><a href="/guides/makroer/">Makroer</a></li>
+          <li><a href="/guides/deklaration/">Læs en deklaration</a></li>
+          <li><a href="/kalorier/">Kalorietabel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kalora</h4>
+        <ul>
+          <li><a href="/om/">Om Kalora</a></li>
+          <li><a href="/support/">Hjælp og kontakt</a></li>
+          <li><a href="/privatliv/">Privatlivspolitik</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Kalora</span>
+      <span>Næringsdata fra DTU Fødevareinstituttet (CC BY 4.0) og Open Food Facts</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
