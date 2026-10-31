@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalorieberegner – hvor mange kalorier skal du have? | Kalora</title>
+<meta name="description" content="Gratis kalorieberegner: find dit daglige kaloriebehov og hvor meget protein, fedt og kulhydrat du skal have for at tabe dig, holde vægten eller tage på.">
+<meta property="og:title" content="Kalorieberegner – hvor mange kalorier skal du have? | Kalora">
+<meta property="og:description" content="Gratis kalorieberegner: find dit daglige kaloriebehov og hvor meget protein, fedt og kulhydrat du skal have for at tabe dig, holde vægten eller tage på.">
+<meta property="og:image" content="https://kalora.dk/img/icon-512.png">
+<meta property="og:url" content="https://kalora.dk/beregner/">
+<meta name="theme-color" content="#FFF6EE">
+<link rel="canonical" href="https://kalora.dk/beregner/">
+<link rel="icon" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=7">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Kalora forside"><img src="/img/icon-180.png" alt=""><span class="name">Kalora</span></a>
+    <nav class="links" aria-label="Menu">
+      <a href="/funktioner/">Funktioner</a>
+      <a href="/saadan-virker-det/">Sådan virker det</a>
+      <a href="/beregner/" aria-current="page">Beregner</a>
+      <a href="/guides/">Guides</a>
+      <a href="/support/">Hjælp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-head">
+    <p class="eyebrow">Kalorieberegner</p>
+    <h1>Hvor mange kalorier skal du have?</h1>
+    <p class="lead">Udfyld fem ting, så får du dit daglige kaloriemål og hvor meget protein, fedt og kulhydrat du skal have. Gratis og uden at oprette noget.</p>
+  </div>
+  <section id="beregner" style="padding-top:24px">
+    <div class="wrap">
+      <div class="calc card">
+        <form id="calc" novalidate>
+          <fieldset class="seg">
+            <legend>Køn</legend>
+            <label><input type="radio" name="sex" value="kvinde" checked><span>Kvinde</span></label>
+            <label><input type="radio" name="sex" value="mand"><span>Mand</span></label>
+          </fieldset>
+          <div class="row3">
+            <label class="field">Alder<span class="inp"><input name="age" inputmode="numeric" placeholder="35" autocomplete="off"><em>år</em></span></label>
+            <label class="field">Højde<span class="inp"><input name="height" inputmode="numeric" placeholder="170" autocomplete="off"><em>cm</em></span></label>
+            <label class="field">Vægt<span class="inp"><input name="weight" inputmode="decimal" placeholder="75" autocomplete="off"><em>kg</em></span></label>
+          </div>
+          <label class="field">Hvor aktiv er du?
+            <select name="activity">
+              <option value="1.2">Sidder meget (kontorarbejde, ikke meget gang)</option>
+              <option value="1.375" selected>Lidt aktiv (går en del eller træner 1–2 gange om ugen)</option>
+              <option value="1.55">Træner 3–5 gange om ugen</option>
+              <option value="1.725">Meget aktiv (hård træning eller fysisk arbejde)</option>
+            </select>
+          </label>
+          <fieldset class="seg">
+            <legend>Hvad er dit mål?</legend>
+            <label><input type="radio" name="goal" value="tabe" checked><span>Tabe mig</span></label>
+            <label><input type="radio" name="goal" value="holde"><span>Holde vægten</span></label>
+            <label><input type="radio" name="goal" value="tage_paa"><span>Tage på</span></label>
+          </fieldset>
+          <label class="field" id="paceRow">Hvor hurtigt?
+            <select name="pace">
+              <option value="0.25">0,25 kg om ugen</option>
+              <option value="0.5" selected>0,5 kg om ugen</option>
+              <option value="0.75">0,75 kg om ugen</option>
+              <option value="1">1 kg om ugen</option>
+            </select>
+          </label>
+        </form>
+        <div class="result" id="result" aria-live="polite">
+          <p class="muted">Udfyld alder, højde og vægt, så regner vi dit daglige mål ud.</p>
+        </div>
+      </div>
+      <p class="small">Beregningen er et skøn og ikke medicinsk rådgivning. <a href="/saadan-virker-det/#kaloriemaal">Se præcis, hvordan vi regner</a>.</p>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap narrow">
+      <h2>Sådan bruger du tallet</h2>
+      <div class="values">
+        <div class="card"><div class="icon" aria-hidden="true">1</div><h3>Prøv det i 2–3 uger</h3><p>Spis omkring dit mål og vej dig et par gange om ugen. Det er gennemsnittet, der tæller, ikke en enkelt dag.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">2</div><h3>Justér efter din krop</h3><p>Går det hurtigere eller langsommere end ventet, så ret målet med 100–200 kcal. Alle kroppe er lidt forskellige.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">3</div><h3>Få nok protein</h3><p>Det mætter og hjælper dig med at holde på musklerne. <a href="/guides/protein/">Læs guiden om protein</a>.</p></div>
+        <div class="card"><div class="icon" aria-hidden="true">4</div><h3>Lad appen følge med</h3><p>I Kalora bliver målet regnet om, når din vægt ændrer sig, så du ikke selv skal huske det.</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap narrow">
+      <h2>Spørgsmål om beregneren</h2>
+      <details><summary>Hvorfor kan jeg ikke komme under 1.200 kcal?</summary><p>Vi går ikke under 1.200 kcal for kvinder og 1.500 kcal for mænd. Under det er det svært at få nok næring, og vægttabet bliver sjældent varigt. Så taber du dig bare lidt langsommere.</p></details>
+      <details><summary>Hvilket aktivitetsniveau skal jeg vælge?</summary><p>Vælg hellere for lavt end for højt. De fleste overvurderer, hvor aktive de er. Træning kan i stedet skrives ind i appen den dag, du træner.</p></details>
+      <details><summary>Hvor hurtigt bør jeg tabe mig?</summary><p>0,25–0,75 kg om ugen er realistisk for de fleste. Jo mindre du har at tabe, jo langsommere giver mening.</p></details>
+      <details><summary>Gemmer I det, jeg skriver?</summary><p>Nej. Beregningen sker kun i din browser, og intet bliver sendt til os.</p></details>
+    </div>
+  </section>
+  <section>
+    <div class="wrap narrow"><div class="app-cta">
+    <img src="/img/icon-180.png" alt="">
+    <div>
+      <p><strong>Prøv Kalora gratis.</strong> Scan stregkoden, find danske varer og se dit kalorie- og proteinmål hver dag.</p>
+      <a class="btn" href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora</a>
+    </div>
+  </div></div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var form = document.getElementById('calc');
+  var out = document.getElementById('result');
+  var paceRow = document.getElementById('paceRow');
+  var REC = { tabe: [2, 30], holde: [1.6, 30], tage_paa: [1.6, 25] };
+  var LABEL = { tabe: 'for at tabe dig', holde: 'for at holde vægten', tage_paa: 'for at tage på' };
+  function num(v) { var n = parseFloat(String(v).replace(',', '.')); return isFinite(n) ? n : NaN; }
+  function fmt(n) { return Math.round(n).toLocaleString('da-DK'); }
+  function update() {
+    var d = new FormData(form);
+    var sex = d.get('sex'), goal = d.get('goal');
+    var age = num(d.get('age')), h = num(d.get('height')), w = num(d.get('weight'));
+    var act = num(d.get('activity')), pace = num(d.get('pace'));
+    var pacePick = form.elements.pace;
+    pacePick.querySelectorAll('option').forEach(function (o) { o.hidden = goal === 'tage_paa' && Number(o.value) > 0.5; });
+    if (goal === 'tage_paa' && pace > 0.5) { pacePick.value = '0.5'; pace = 0.5; }
+    paceRow.hidden = goal === 'holde';
+    if (!(age >= 14 && age <= 100) || !(h >= 120 && h <= 230) || !(w >= 35 && w <= 300)) {
+      var msg = 'Udfyld alder, højde og vægt, så regner vi dit daglige mål ud.';
+      if (age && !(age >= 14 && age <= 100)) msg = 'Alderen skal være mellem 14 og 100 år.';
+      else if (h && !(h >= 120 && h <= 230)) msg = 'Skriv højden i centimeter, fx 172.';
+      else if (w && !(w >= 35 && w <= 300)) msg = 'Skriv vægten i kilo, fx 74,5.';
+      out.innerHTML = '<p class="muted">' + msg + '</p>';
+      return;
+    }
+    var bmr = 10 * w + 6.25 * h - 5 * age + (sex === 'mand' ? 5 : -161);
+    var keep = bmr * act;
+    var weekly = goal === 'holde' ? 0 : pace;
+    var adjust = (goal === 'tabe' ? -1 : 1) * weekly * 7700 / 7;
+    var min = sex === 'mand' ? 1500 : 1200;
+    var kcal = Math.max(min, Math.round((keep + adjust) / 10) * 10);
+    var r = REC[goal];
+    var protein = Math.round(Math.min(w * r[0], kcal * 0.35 / 4));
+    var fat = Math.round(kcal * r[1] / 100 / 9);
+    var carbs = Math.max(0, Math.round((kcal - protein * 4 - fat * 9) / 4));
+    var floor = goal === 'tabe' && kcal === min && keep + adjust < min;
+    out.innerHTML =
+      '<p class="label">Dit daglige mål ' + LABEL[goal] + '</p>' +
+      '<p class="big">' + fmt(kcal) + ' <span>kcal</span></p>' +
+      '<div class="macros">' +
+        '<div class="m p"><b>' + protein + ' g</b><span>protein</span></div>' +
+        '<div class="m f"><b>' + fat + ' g</b><span>fedt</span></div>' +
+        '<div class="m c"><b>' + carbs + ' g</b><span>kulhydrat</span></div>' +
+      '</div>' +
+      '<p class="muted">Du forbrænder cirka ' + fmt(keep) + ' kcal om dagen.' +
+      (floor ? ' Vi går ikke under ' + fmt(min) + ' kcal, så du taber dig nok lidt langsommere end valgt.' : '') + '</p>';
+  }
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
+  update();
+})();
+</script>
+
+<footer class="big">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><img src="/img/icon-180.png" alt="">Kalora</a>
+        <p>Dansk kalorietæller til iPhone. Rigtige tal fra rigtige kilder.</p>
+      </div>
+      <div>
+        <h4>Appen</h4>
+        <ul>
+          <li><a href="/funktioner/">Funktioner</a></li>
+          <li><a href="/saadan-virker-det/">Sådan virker det</a></li>
+          <li><a href="/beregner/">Kalorieberegner</a></li>
+          <li><a href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/guides/taelle-kalorier/">Tæl kalorier</a></li>
+          <li><a href="/guides/protein/">Protein</a></li>
+          <li><a href="/guides/makroer/">Makroer</a></li>
+          <li><a href="/guides/deklaration/">Læs en deklaration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kalora</h4>
+        <ul>
+          <li><a href="/om/">Om Kalora</a></li>
+          <li><a href="/support/">Hjælp og kontakt</a></li>
+          <li><a href="/privatliv/">Privatlivspolitik</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Kalora</span>
+      <span>Næringsdata fra DTU Fødevareinstituttet (CC BY 4.0) og Open Food Facts</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -228,20 +228,21 @@ footer.big .bottom { display: flex; flex-wrap: wrap; justify-content: space-betw
   .article table { font-size: 14px; }
   .article th, .article td { padding: 8px 10px; }
 }
-@media (max-width: 360px) {
-  header.top .wrap { gap: 10px; }
-  nav.links { gap: 10px; font-size: 13px; }
-  .brand { font-size: 18px; gap: 8px; }
-  .brand img { width: 30px; height: 30px; }
+
+/* Menu lige efter logoet */
+header.top .wrap { justify-content: flex-start; gap: 40px; }
+nav.links { gap: 26px; }
+nav.links a { white-space: nowrap; padding: 6px 0; border-bottom: 2px solid transparent; }
+nav.links a[aria-current] { color: var(--text); border-bottom-color: var(--primary); }
+@media (max-width: 860px) {
+  header.top { padding: 14px 0 0; }
+  header.top .wrap { flex-wrap: wrap; gap: 6px 0; }
+  nav.links { width: 100%; gap: 20px; font-size: 15px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding-bottom: 2px; border-bottom: 1px solid var(--border); }
+  nav.links::-webkit-scrollbar { display: none; }
+  nav.links a { padding: 10px 0; }
 }
-@media (max-width: 480px) {
-  header.top .wrap { gap: 8px; }
-  nav.links { gap: 12px; font-size: 14px; }
-  header.top .brand span.name { display: none; }
-}
-@media (max-width: 360px) {
-  nav.links { gap: 9px; font-size: 13px; }
-}
-@media (max-width: 480px) { nav.links { gap: 10px; font-size: 13.5px; } }
-@media (max-width: 360px) { nav.links { gap: 7px; font-size: 12.5px; } header.top .wrap { gap: 6px; } .brand img { width: 28px; height: 28px; } }
-@media (max-width: 360px) { header.top .wrap { padding: 0 12px; } nav.links { gap: 6px; font-size: 12px; } }
+@media (max-width: 400px) { .article th, .article td { padding: 7px 6px; font-size: 13px; } .jump a { font-size: 13px; padding: 7px 11px; } }
+@media (max-width: 480px) { nav.links { gap: 0; justify-content: space-between; font-size: 14px; } }
+@media (max-width: 370px) { nav.links { font-size: 12.5px; } }
+@media (max-width: 340px) { header.top .wrap { padding: 0 12px; } nav.links { font-size: 11.5px; } }
+@media (max-width: 480px) { nav.links { font-size: 13.5px; } } @media (max-width: 370px) { nav.links { font-size: 12px; } } @media (max-width: 340px) { nav.links { font-size: 11px; } }
