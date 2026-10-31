@@ -234,3 +234,11 @@ footer.big .bottom { display: flex; flex-wrap: wrap; justify-content: space-betw
   .brand { font-size: 18px; gap: 8px; }
   .brand img { width: 30px; height: 30px; }
 }
+@media (max-width: 480px) {
+  header.top .wrap { gap: 8px; }
+  nav.links { gap: 12px; font-size: 14px; }
+  header.top .brand span.name { display: none; }
+}
+@media (max-width: 360px) {
+  nav.links { gap: 9px; font-size: 13px; }
+}
