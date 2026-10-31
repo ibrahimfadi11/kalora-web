@@ -1,10 +1,7 @@
-# Preview: kalorietabel, 7 nye guides og 3 nye beregnere
+# Preview
 
-Ikke udgivet endnu.
-
-- 1-8: kalorietabel og forsiden
-- 10-15: nye guides
-- 20-23: nye beregnere
+- 30: brugsvilkår (udkast, ikke udgivet)
+- 1-23: allerede udgivet
 
 ## 1-kalorietabel-computer
 
@@ -85,4 +82,8 @@ Ikke udgivet endnu.
 ## 23-kalorieberegner-flere-beregnere
 
 ![](preview/23-kalorieberegner-flere-beregnere.png)
+
+## 30-brugsvilkaar
+
+![](preview/30-brugsvilkaar.png)
 
