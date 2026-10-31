@@ -1,6 +1,10 @@
-# Preview 2: kalorietabel og nye guides
+# Preview: kalorietabel, 7 nye guides og 3 nye beregnere
 
-Ikke udgivet endnu. Tabellen er gemt væk: grupperne er lukket, og der er kun et lille link i bunden af siden.
+Ikke udgivet endnu.
+
+- 1-8: kalorietabel og forsiden
+- 10-15: nye guides
+- 20-23: nye beregnere
 
 ## 1-kalorietabel-computer
 
@@ -41,4 +45,44 @@ Ikke udgivet endnu. Tabellen er gemt væk: grupperne er lukket, og der er kun et
 ## 8-bunden-med-link
 
 ![](preview/8-bunden-med-link.png)
+
+## 10-guides-oversigt
+
+![](preview/10-guides-oversigt.png)
+
+## 11-guide-alkohol
+
+![](preview/11-guide-alkohol.png)
+
+## 12-guide-skridt
+
+![](preview/12-guide-skridt.png)
+
+## 13-guide-snacks
+
+![](preview/13-guide-snacks.png)
+
+## 14-guide-faste
+
+![](preview/14-guide-faste.png)
+
+## 15-guide-bmi
+
+![](preview/15-guide-bmi.png)
+
+## 20-bmi-beregner
+
+![](preview/20-bmi-beregner.png)
+
+## 21-proteinberegner
+
+![](preview/21-proteinberegner.png)
+
+## 22-forbraendingsberegner
+
+![](preview/22-forbraendingsberegner.png)
+
+## 23-kalorieberegner-flere-beregnere
+
+![](preview/23-kalorieberegner-flere-beregnere.png)
 
