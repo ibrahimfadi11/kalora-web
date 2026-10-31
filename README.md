@@ -1,6 +1,6 @@
-# Preview: kalorietabel og nye guides
+# Preview 2: kalorietabel og nye guides
 
-Ikke udgivet endnu.
+Ikke udgivet endnu. Tabellen er gemt væk: grupperne er lukket, og der er kun et lille link i bunden af siden.
 
 ## 1-kalorietabel-computer
 
@@ -13,6 +13,10 @@ Ikke udgivet endnu.
 ## 2b-kalorietabel-soegning
 
 ![](preview/2b-kalorietabel-soegning.png)
+
+## 2c-kalorietabel-grupper
+
+![](preview/2c-kalorietabel-grupper.png)
 
 ## 3-skyr-computer
 
@@ -33,4 +37,8 @@ Ikke udgivet endnu.
 ## 7-forside-guides
 
 ![](preview/7-forside-guides.png)
+
+## 8-bunden-med-link
+
+![](preview/8-bunden-med-link.png)
 
