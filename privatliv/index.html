@@ -37,7 +37,7 @@
 
 <main class="wrap doc">
   <h1>Privatlivspolitik</h1>
-  <p class="updated">Senest opdateret 5. november 2026</p>
+  <p class="updated">Senest opdateret 8. november 2026</p>
 
   <p>Kalora er en app til at holde styr på kalorier, mad, vand, motion og vægt. Her kan du læse, hvilke oplysninger appen gemmer, hvorfor, og hvordan du får dem slettet. Kort sagt: Vi gemmer kun det, appen skal bruge for at virke. Vi sælger ikke dine oplysninger, og din dagbog, vægt og profil bliver aldrig brugt til reklamer.</p>
 
@@ -55,7 +55,7 @@
   <p>Oplysninger om vægt, mad og motion kan sige noget om dit helbred. Vi behandler dem kun, fordi du selv skriver dem ind for at bruge appen, og kun til det formål.</p>
 
   <h2>Hvor ligger oplysningerne?</h2>
-  <p>Oplysningerne ligger på din telefon. De bliver også gemt sikkert i vores database hos Supabase, som har servere i EU (Irland). Det gør, at du ikke mister dine data, hvis du skifter telefon. Før du gemmer din konto med e-mail, er du anonym hos os: Vi kender kun et tilfældigt id-nummer, ikke dit navn eller din e-mail.</p>
+  <p>Oplysningerne ligger på din telefon. De bliver også gemt sikkert i vores database hos en udbyder med servere i EU (Irland). Det gør, at du ikke mister dine data, hvis du skifter telefon. Før du gemmer din konto med e-mail, er du anonym hos os: Vi kender kun et tilfældigt id-nummer, ikke dit navn eller din e-mail.</p>
 
   <h2>Hvem kan se dine oplysninger?</h2>
   <p>Kun dig. Din dagbog, din vægt og din profil deles ikke med andre brugere eller med andre firmaer.</p>
@@ -64,14 +64,16 @@
 
   <h2>Andre tjenester</h2>
   <ul>
-    <li><strong>Open Food Facts:</strong> Når du scanner eller søger efter en vare, sendes stregkoden eller søgeordet til Open Food Facts (openfoodfacts.org) for at finde varen. Der sendes ingen oplysninger om dig.</li>
-    <li><strong>Kamera:</strong> Billeder af stregkoder og varedeklarationer bliver læst på din telefon og bliver ikke gemt eller sendt til os.</li>
-    <li><strong>Madfoto (Premium):</strong> Når du tager et billede af dit måltid, sendes billedet gennem vores server til Anthropic (firmaet bag AI-modellen Claude), som giver et skøn over maden og kalorierne. Billedet sendes uden dit navn eller din e-mail, og vi gemmer det ikke. Anthropic gemmer det kun i kort tid af sikkerhedshensyn og bruger det ikke til at træne sine modeller.</li>
+    <li><strong>Søgning og scanning:</strong> Når du scanner eller søger efter en vare, slår vi stregkoden eller søgeordet op i åbne fødevaredatabaser for at finde varen. Der sendes ingen oplysninger om dig.</li>
+    <li><strong>Kamera:</strong> Billeder af stregkoder og varedeklarationer bliver ikke gemt eller sendt til os.</li>
+    <li><strong>Madfoto (Premium):</strong> Når du tager et billede af dit måltid, sendes billedet til en AI-tjeneste, som giver et skøn over maden og kalorierne. Billedet sendes uden dit navn eller din e-mail, og vi gemmer det ikke. Tjenesten gemmer det kun i kort tid af sikkerhedshensyn og bruger det ikke til at træne sine modeller.</li>
     <li><strong>Skridt og Apple Sundhed:</strong> Hvis du giver lov, læser appen dine skridt fra Apple Sundhed eller iPhonens skridttæller. Skridtene bliver vist i appen og bliver ikke gemt hos os. Kalora skriver ikke noget i Apple Sundhed.</li>
-    <li><strong>Køb af Premium:</strong> Betaling sker gennem Apple. Vi får aldrig dine kortoplysninger. For at vide, om du har Premium, bruger vi RevenueCat, som kun kender dit tilfældige id-nummer og dine køb.</li>
+    <li><strong>Køb af Premium:</strong> Betaling sker gennem Apple. Vi får aldrig dine kortoplysninger. For at vide, om du har Premium, bruger vi en tjeneste til abonnementer, som kun kender dit tilfældige id-nummer og dine køb.</li>
     <li><strong>Reklamer:</strong> Uden Premium viser appen en lille reklame fra Google AdMob. Første gang spørger appen, om du giver samtykke til personlige reklamer, og iPhonen spørger, om apps må følge dig. Siger du nej, får du stadig reklamer, men de er ikke personlige. Google kan bruge oplysninger om din telefon (fx model, sprog og omtrentlig placering ud fra IP-adresse) til at vise og måle reklamerne. Google får aldrig din dagbog, vægt eller profil. Du kan ændre dit valg under <strong>Mere → Fortrolighed → Skift reklamevalg</strong>. Med Premium er der ingen reklamer.</li>
     <li><strong>Påmindelser</strong> bliver lavet på din telefon. Vi sender ikke beskeder fra en server.</li>
   </ul>
+  <p>De firmaer, vi bruger til drift af database, e-mail, madfoto og abonnementer, er databehandlere for os. De må kun bruge oplysningerne til at levere deres tjeneste til Kalora. Skriv til <a href="mailto:support@kalora.dk">support@kalora.dk</a>, hvis du vil have en liste over dem.</p>
+  <p><strong>Overførsel uden for EU:</strong> Nogle af tjenesterne, fx AI-tjenesten til madfoto, tjenesten til abonnementer og Googles reklamer, er amerikanske firmaer, og oplysningerne kan derfor blive behandlet i USA. Det sker kun på et lovligt grundlag: EU-Kommissionens standardkontraktbestemmelser eller EU-US Data Privacy Framework.</p>
 
   <h2>Hjemmesiden kalora.dk</h2>
   <p>Hjemmesiden bruger ingen cookies. For at vide, hvor mange der besøger siden, gemmer vi for hver sidevisning kun hvilken side der blev vist, hvilken hjemmeside man kom fra (fx google.com), og om det var en mobil eller en computer. Vi gemmer ikke din IP-adresse eller noget andet, der kan bruges til at genkende dig. Beregnerne regner kun i din browser, og det, du skriver i dem, bliver ikke sendt til os.</p>
