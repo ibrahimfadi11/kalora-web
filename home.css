@@ -12,9 +12,6 @@ main h2 { font-size: clamp(30px, 4.6vw, 48px); line-height: 1.08; letter-spacing
 main .kicker { font-size: 13px; letter-spacing: .08em; margin-bottom: 12px; }
 main .sub { font-size: 18px; max-width: 46ch; }
 
-/* Menu */
-header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: rgba(255, 246, 238, .78); -webkit-backdrop-filter: saturate(1.5) blur(16px); backdrop-filter: saturate(1.5) blur(16px); transition: box-shadow .25s; }
-header.top.scrolled { box-shadow: 0 1px 0 var(--border), 0 10px 30px rgba(110, 50, 25, .07); }
 
 /* Knapper */
 .btn { transition: transform .18s, box-shadow .18s, background .18s; }
@@ -23,7 +20,7 @@ header.top.scrolled { box-shadow: 0 1px 0 var(--border), 0 10px 30px rgba(110, 5
 .btn:active { transform: scale(.98); }
 .btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px rgba(43, 29, 23, .18); }
 .btn.ghost:hover { box-shadow: inset 0 0 0 1.5px var(--ink); }
-:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; border-radius: 8px; }
+
 
 /* Telefon */
 .device { position: relative; border-radius: 46px; padding: 9px; background: linear-gradient(145deg, #3A2A23, #120B08); box-shadow: var(--shadow-lg), inset 0 0 0 1.5px rgba(255,255,255,.08); }
