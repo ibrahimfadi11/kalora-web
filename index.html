@@ -20,7 +20,7 @@
 <link rel="icon" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
 <link rel="stylesheet" href="/style.css?v=10">
-<link rel="stylesheet" href="/home.css?v=2">
+<link rel="stylesheet" href="/home.css?v=3">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://kalora.dk/#org", "name": "Kalora", "url": "https://kalora.dk/", "logo": "https://kalora.dk/img/icon-512.png", "email": "support@kalora.dk"}, {"@type": "WebSite", "@id": "https://kalora.dk/#site", "url": "https://kalora.dk/", "name": "Kalora", "inLanguage": "da-DK", "publisher": {"@id": "https://kalora.dk/#org"}}, {"@type": "MobileApplication", "name": "Kalora", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "inLanguage": "da", "description": "Kalora er en enkel dansk kalorietæller til iPhone. Tag et billede af maden, scan stregkoden, find danske varer, og se kalorier, protein, fedt og kulhydrat. Med gratis kalorieberegner.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "DKK"}, "publisher": {"@id": "https://kalora.dk/#org"}, "screenshot": ["https://kalora.dk/img/home.jpg", "https://kalora.dk/img/foto.jpg", "https://kalora.dk/img/diary.jpg", "https://kalora.dk/img/weight.jpg"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Er Kalora gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, du kan bruge Kalora gratis. Det koster ikke noget at skrive mad ind, scanne varer eller følge din vægt."}}, {"@type": "Question", "name": "Hvor hurtigt kan jeg tabe mig?", "acceptedAnswer": {"@type": "Answer", "text": "Det vælger du selv. Et roligt tempo er lettere at holde, og så bliver vægten oftere nede. Kalora regner dit daglige mål ud efter det tempo, du vælger, og viser, hvornår du cirka når din målvægt."}}, {"@type": "Question", "name": "Skal jeg holde op med at spise noget bestemt?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. Ingen mad er forbudt. Kalora viser, hvor meget der er plads til, så du selv kan vælge, hvad du vil bruge kalorierne på. Du kan også give dig selv lidt mere i weekenden."}}, {"@type": "Question", "name": "Kan Kalora regne kalorier ud fra et billede?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Tag et billede af tallerkenen, så skønner Kalora, hvad der er på den, og regner kalorier, protein, fedt og kulhydrat ud. Det er et skøn, især portionens størrelse, så du ser altid listen og kan rette grammene, før det gemmes. Madfoto er en del af Kalora Premium."}}, {"@type": "Question", "name": "Kender appen danske varer?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Basisvarer kommer fra Den Danske Fødevaredatabase, og varer fra danske butikker findes ved at scanne stregkoden. Mangler en vare, kan du oprette den ud fra pakkens deklaration, og så kan andre også finde den."}}, {"@type": "Question", "name": "Hvor præcist er mit kaloriemål?", "acceptedAnswer": {"@type": "Answer", "text": "Det er et godt udgangspunkt, men alle kroppe er forskellige. Følg din vægt et par uger og justér målet, hvis det går hurtigere eller langsommere end ventet."}}, {"@type": "Question", "name": "Skal jeg oprette en konto?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. Du kan gå i gang med det samme. Vil du kunne skifte telefon uden at miste dine data, kan du gemme en konto med e-mail."}}, {"@type": "Question", "name": "Hvad sker der med mine data?", "acceptedAnswer": {"@type": "Answer", "text": "De gemmes på din telefon og på servere i EU, så du ikke mister dem. Vi sælger dem ikke, og du kan slette alt i appen. Læs mere i privatlivspolitikken."}}, {"@type": "Question", "name": "Findes Kalora til Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ikke endnu. Kalora er lige nu kun til iPhone."}}]}]}</script>
 </head>
 <body>
@@ -38,101 +38,136 @@
 </header>
 
 <main>
-  <!-- Forside -->
-  <div class="hero-bg">
-  <div class="wrap h-hero">
-    <div>
-      <p class="eyebrow">Til iPhone · På dansk · Gratis</p>
-      <h1>Tab dig uden kure. <span>Og uden at gå sulten i seng.</span></h1>
-      <p class="lead">Kalora giver dig et kaloriemål, der passer til din krop, og gør det hurtigt at skrive maden ind. Tag et billede, scan stregkoden eller søg blandt danske varer. Så kan du se, at det virker, uge for uge.</p>
+  <!-- 1. Forside: appen i centrum -->
+  <section class="hero3">
+    <div class="wrap hero3-text">
+      <p class="eyebrow">Kalorietæller til iPhone · På dansk</p>
+      <h1>Tab dig uden kure.<br><em>Og uden at gå sulten i seng.</em></h1>
+      <p class="lead">Et kaloriemål, der passer til din krop. Mad skrevet ind på sekunder med billede eller stregkode. Og en graf, der viser, at det virker.</p>
       <div class="cta">
         <a class="btn" href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora gratis</a>
-        <a class="btn secondary" href="/beregner/">Find dit kaloriemål</a>
+        <a class="btn ghost" href="#maal">Hvornår når jeg mit mål?</a>
       </div>
-      <ul class="trust">
-        <li>Ingen forbudt mad</li>
-        <li>Ingen konto nødvendig</li>
-        <li>Danske varer</li>
-      </ul>
-      <p class="note">Kalora er i test og kommer snart i App Store. Du kan prøve den nu via Apples TestFlight.</p>
+      <p class="note">I test nu via Apples TestFlight. Kommer snart i App Store.</p>
     </div>
+    <div class="stage" id="stage" aria-hidden="true">
+      <div class="device side left"><img src="/img/foto.webp" alt="" width="585" height="1266"></div>
+      <div class="device side right"><img src="/img/weight.webp" alt="" width="585" height="1266"></div>
+      <div class="device main"><img src="/img/home.webp" alt="" width="585" height="1266" fetchpriority="high"></div>
+      <div class="float f1" data-depth="18"><span class="fi scan"></span><div><b>Stregkode fundet</b><small>Skyr naturel · 61 kcal pr. 100 g</small></div></div>
+      <div class="float f2" data-depth="-14"><div class="fbar"><span>Protein</span><span>58 / 120 g</span></div><div class="track"><i style="width:48%"></i></div></div>
+      <div class="float f3" data-depth="10"><span class="fi flag"></span><div><b>6,0 kg tilbage</b><small>Målet nås omkring 24. januar</small></div></div>
+    </div>
+    <div class="wrap">
+      <ul class="stats" aria-label="Kalora i tal">
+        <li><strong data-count="1390">1.390</strong><span>danske basisvarer fra DTU</span></li>
+        <li><strong data-count="11">11</strong><span>vitaminer og mineraler</span></li>
+        <li><strong>0 kr.</strong><span>at komme i gang</span></li>
+        <li><strong>Ingen</strong><span>konto nødvendig</span></li>
+      </ul>
+    </div>
+  </section>
 
-    <form class="goal" id="goal" onsubmit="return false" aria-label="Hvornår når du din målvægt?">
-      <h2>Hvornår når du dit mål?</h2>
-      <p class="hint">Træk i knapperne og se det med det samme.</p>
-      <div class="row">
-        <label for="gNow">Jeg vejer nu <output id="oNow">90 <small>kg</small></output></label>
-        <input type="range" id="gNow" min="45" max="180" step="1" value="90">
-      </div>
-      <div class="row">
-        <label for="gGoal">Jeg vil gerne veje <output id="oGoal">80 <small>kg</small></output></label>
-        <input type="range" id="gGoal" min="40" max="179" step="1" value="80">
-      </div>
-      <div class="row">
-        <label id="paceLbl">Tempo</label>
-        <div class="chips" role="group" aria-labelledby="paceLbl" id="pace">
-          <button type="button" class="chip" data-v="0.25" aria-pressed="false">Roligt · ¼ kg/uge</button>
-          <button type="button" class="chip" data-v="0.5" aria-pressed="true">Anbefalet · ½ kg/uge</button>
-          <button type="button" class="chip" data-v="0.75" aria-pressed="false">Hurtigt · ¾ kg/uge</button>
+  <!-- 2. Målberegner -->
+  <section class="goal3" id="maal">
+    <div class="wrap goal3-grid">
+      <div class="goal3-form">
+        <p class="kicker">Prøv selv</p>
+        <h2>Hvornår når du dit mål?</h2>
+        <p class="sub">Træk i knapperne. Kurven tegner sig med det samme.</p>
+        <div class="row">
+          <label for="gNow">Jeg vejer nu <output id="oNow">90 <small>kg</small></output></label>
+          <input type="range" id="gNow" min="45" max="180" step="1" value="90">
         </div>
+        <div class="row">
+          <label for="gGoal">Jeg vil gerne veje <output id="oGoal">80 <small>kg</small></output></label>
+          <input type="range" id="gGoal" min="40" max="179" step="1" value="80">
+        </div>
+        <div class="row">
+          <label id="paceLbl">Tempo</label>
+          <div class="seg" role="group" aria-labelledby="paceLbl" id="pace">
+            <button type="button" data-v="0.25" aria-pressed="false">Roligt<small>¼ kg/uge</small></button>
+            <button type="button" data-v="0.5" aria-pressed="true">Anbefalet<small>½ kg/uge</small></button>
+            <button type="button" data-v="0.75" aria-pressed="false">Hurtigt<small>¾ kg/uge</small></button>
+          </div>
+        </div>
+        <p class="fine">Et skøn, hvis du holder tempoet. Vil du tabe dig meget, eller har du en sygdom, så tal med din læge først.</p>
       </div>
-      <div class="answer" aria-live="polite">
+      <div class="goal3-out" aria-live="polite">
         <p class="label">Du kan nå dit mål omkring</p>
         <p class="date" id="gDate">–</p>
-        <svg class="curve" id="gCurve" viewBox="0 0 320 120" role="img" aria-label="Din vægt fra i dag til målet">
-          <defs><linearGradient id="gFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C9483B" stop-opacity=".22"/><stop offset="1" stop-color="#C9483B" stop-opacity="0"/></linearGradient></defs>
-          <line class="goalline" x1="8" x2="312" y1="96" y2="96"/>
+        <svg class="curve" id="gCurve" viewBox="0 0 400 190" role="img" aria-label="Din vægt fra i dag til målet">
+          <defs><linearGradient id="gFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C9483B" stop-opacity=".25"/><stop offset="1" stop-color="#C9483B" stop-opacity="0"/></linearGradient></defs>
+          <line class="goalline" x1="16" x2="384" y1="150" y2="150"/>
           <path id="gArea" fill="url(#gFill)" d=""/>
           <path id="gLine" class="line" d=""/>
-          <circle id="gDot0" r="5" class="dot0" cx="12" cy="22"/>
-          <circle id="gDot1" r="6" class="dot1" cx="308" cy="96"/>
+          <circle r="6" class="dot0" cx="20" cy="30"/>
+          <circle r="7" class="dot1" cx="380" cy="150"/>
+          <text x="20" y="182" class="ax">I dag</text>
+          <text x="380" y="182" class="ax end" id="gEndLbl">Mål</text>
+          <text x="384" y="140" class="ax end goal" id="gGoalLbl">80 kg</text>
+          <text x="32" y="22" class="ax start" id="gNowLbl">90 kg</text>
         </svg>
         <ul class="miles" id="gMiles"></ul>
-      </div>
-      <a class="btn" href="/beregner/">Se, hvor mange kalorier du skal spise</a>
-      <p class="fine">Et skøn, hvis du holder tempoet. Vil du tabe dig meget, eller har du en sygdom, så tal med din læge først.</p>
-    </form>
-  </div>
-  <div class="wrap">
-    <ul class="stats" aria-label="Kalora i tal">
-      <li><strong data-count="1390">1.390</strong><span>danske basisvarer fra DTU</span></li>
-      <li><strong data-count="11">11</strong><span>vitaminer og mineraler</span></li>
-      <li><strong data-count="0" data-suffix=" kr.">0 kr.</strong><span>at komme i gang</span></li>
-      <li><strong>100 %</strong><span>på dansk</span></li>
-    </ul>
-  </div>
-  </div>
-
-  <!-- Problem og løsning -->
-  <section class="band reveal" id="hvorfor">
-    <div class="wrap">
-      <h2>Har du prøvet før?</h2>
-      <p class="sub">De fleste har. Vælg det, der lyder mest som dig, og se hvad Kalora gør ved det.</p>
-      <div class="pain">
-        <div>
-          <div class="chips" role="tablist" id="painTabs">
-            <button type="button" class="chip" role="tab" aria-pressed="true" data-i="0">Jeg bliver for sulten</button>
-            <button type="button" class="chip" role="tab" aria-pressed="false" data-i="1">Det tager for lang tid</button>
-            <button type="button" class="chip" role="tab" aria-pressed="false" data-i="2">Jeg mister modet</button>
-            <button type="button" class="chip" role="tab" aria-pressed="false" data-i="3">Jeg vil ikke opgive min yndlingsmad</button>
-            <button type="button" class="chip" role="tab" aria-pressed="false" data-i="4">Jeg ved ikke, om jeg gør det rigtigt</button>
-          </div>
-          <div class="pain-panel" id="painPanel" aria-live="polite"></div>
-        </div>
-        <div class="phone small-phone"><img class="swap-img" id="painImg" src="/img/macros.webp" alt="" width="585" height="1266"></div>
+        <a class="btn light" href="/beregner/">Se, hvor mange kalorier du skal spise</a>
       </div>
     </div>
   </section>
 
-  <!-- Prøv appen -->
-  <section class="reveal" id="demo">
+  <!-- 3. Sådan virker det: telefon der følger med -->
+  <section class="story" id="saadan">
+    <div class="wrap">
+      <p class="kicker">Sådan virker det</p>
+      <h2>Fire ting, der gør det nemt at holde ved</h2>
+    </div>
+    <div class="wrap story-grid">
+      <ol class="story-steps" id="steps">
+        <li class="step active" data-img="0">
+          <span class="stepno">1</span>
+          <h3>Et mål, der passer til dig</h3>
+          <p>Skriv din vægt, din målvægt og hvor hurtigt du vil tabe dig. Kalora regner dit daglige kaloriemål ud og sætter et proteinmål, der holder dig mæt.</p>
+          <div class="device inline"><img src="/img/home.webp" alt="Kaloras forside med kalorier tilbage i dag" loading="lazy" width="585" height="1266"></div>
+        </li>
+        <li class="step" data-img="1">
+          <span class="stepno">2</span>
+          <h3>Tag et billede af maden</h3>
+          <p>Madfoto finder hver ting på tallerkenen og regner kalorier, protein, fedt og kulhydrat ud. Det er et skøn, så du ser listen og retter grammene, før noget gemmes.</p>
+          <p class="small">Madfoto er en del af Kalora Premium.</p>
+          <div class="device inline"><img src="/img/foto.webp" alt="Madfoto med laks, kartofler, broccoli og smør" loading="lazy" width="585" height="1266"></div>
+        </li>
+        <li class="step" data-img="2">
+          <span class="stepno">3</span>
+          <h3>Scan eller søg blandt danske varer</h3>
+          <p>Scan stregkoden i butikken, eller søg efter "rugbrød". Basisvarerne kommer fra Den Danske Fødevaredatabase. Din faste morgenmad gemmer du som en ret, så er den ét tryk.</p>
+          <div class="device inline"><img src="/img/search.webp" alt="Søgning blandt danske varer" loading="lazy" width="585" height="1266"></div>
+        </li>
+        <li class="step" data-img="3">
+          <span class="stepno">4</span>
+          <h3>Se, at det virker</h3>
+          <p>Vej dig, når du har lyst. Grafen viser vejen mod målet, og når du afslutter dagen, kan du se, hvad du vejer om fire uger, hvis alle dage var som i dag.</p>
+          <div class="device inline"><img src="/img/weight.webp" alt="Vægtgraf med målvægt" loading="lazy" width="585" height="1266"></div>
+        </li>
+      </ol>
+      <div class="story-phone" aria-hidden="true">
+        <div class="device big" id="storyDevice">
+          <img src="/img/home.webp" alt="" class="on" width="585" height="1266">
+          <img src="/img/foto.webp" alt="" loading="lazy" width="585" height="1266">
+          <img src="/img/search.webp" alt="" loading="lazy" width="585" height="1266">
+          <img src="/img/weight.webp" alt="" loading="lazy" width="585" height="1266">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Prøv appen -->
+  <section class="demo3" id="demo">
     <div class="wrap">
       <p class="kicker">Prøv den her på siden</p>
       <h2>Byg en dag, og se hvad der sker</h2>
-      <p class="sub">Tryk på maden og se, hvordan Kalora holder styr på dagen for dig. Eksemplet har et mål på 1.800 kcal og 120 g protein.</p>
+      <p class="sub">Tryk på maden. Eksemplet har et mål på 1.800 kcal og 120 g protein.</p>
       <div class="demo">
         <div class="mock" aria-live="polite">
-          <div class="mock-top"><span>I dag</span><span class="streak">🔥 Dag 1</span></div>
+          <div class="mock-top"><span>I dag</span><button type="button" class="linkbtn" id="dReset">Nulstil</button></div>
           <div class="ringwrap">
             <svg viewBox="0 0 120 120" class="ring" aria-hidden="true"><circle cx="60" cy="60" r="52" class="track"/><circle cx="60" cy="60" r="52" class="prog" id="dRing"/></svg>
             <div class="ringtext"><strong id="dLeft">1.800</strong><span id="dLeftLbl">kcal tilbage</span></div>
@@ -165,21 +200,89 @@
             <button type="button" class="food" data-m="Snacks" data-n="Lille pose chips" data-k="249" data-p="3"><b>Lille pose chips</b><span>249 kcal · 3 g protein</span></button>
             <button type="button" class="food" data-m="Snacks" data-n="Sodavand med sukker, 0,5 l" data-k="195" data-p="0"><b>Sodavand, 0,5 l</b><span>195 kcal · 0 g protein</span></button>
           </div>
-          <p class="small">Tal fra Den Danske Fødevaredatabase (DTU). <button type="button" class="linkbtn" id="dReset">Start forfra</button></p>
+          <p class="small">Tal fra Den Danske Fødevaredatabase (DTU).</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Bytte-beregner -->
-  <section class="reveal" id="bytte">
+  <!-- 5. Har du prøvet før? (mørk) -->
+  <section class="dark" id="hvorfor">
     <div class="wrap">
-      <p class="kicker">Prøv selv</p>
-      <h2>Små bytte. Stor forskel.</h2>
-      <p class="sub">Du behøver ikke vende dit liv på hovedet. Tryk på de bytte, du godt kunne leve med.</p>
+      <p class="kicker">Har du prøvet før?</p>
+      <h2>De fleste har. Hvad fik dig til at stoppe?</h2>
+      <div class="pain">
+        <div class="pain-tabs" role="tablist" id="painTabs">
+          <button type="button" role="tab" aria-selected="true" data-i="0">Jeg blev for sulten</button>
+          <button type="button" role="tab" aria-selected="false" data-i="1">Det tog for lang tid</button>
+          <button type="button" role="tab" aria-selected="false" data-i="2">Jeg mistede modet</button>
+          <button type="button" role="tab" aria-selected="false" data-i="3">Jeg måtte ikke spise det, jeg kan lide</button>
+          <button type="button" role="tab" aria-selected="false" data-i="4">Jeg vidste ikke, om jeg gjorde det rigtigt</button>
+        </div>
+        <div class="pain-panel" id="painPanel" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Alt det andet (bento) -->
+  <section class="bento-sec">
+    <div class="wrap">
+      <p class="kicker">Og alt det andet</p>
+      <h2>Lavet til at blive brugt hver dag</h2>
+      <div class="bento">
+        <div class="tile t-water">
+          <h3>Vand</h3>
+          <p>Tryk på et glas, så er det skrevet ind. Prøv det:</p>
+          <div class="glasses" id="glasses" role="group" aria-label="Glas vand">
+            <button type="button" aria-label="Glas 1" aria-pressed="true"></button><button type="button" aria-label="Glas 2" aria-pressed="true"></button><button type="button" aria-label="Glas 3" aria-pressed="true"></button><button type="button" aria-label="Glas 4" aria-pressed="false"></button><button type="button" aria-label="Glas 5" aria-pressed="false"></button><button type="button" aria-label="Glas 6" aria-pressed="false"></button><button type="button" aria-label="Glas 7" aria-pressed="false"></button><button type="button" aria-label="Glas 8" aria-pressed="false"></button>
+          </div>
+          <p class="tval"><b id="water">0,75</b> af 2 liter</p>
+        </div>
+        <div class="tile t-vit">
+          <h3>11 vitaminer og mineraler</h3>
+          <p>Plus fibre, sukker og salt, forklaret på dansk.</p>
+          <ul class="vbars">
+            <li><span>D-vitamin</span><i style="--w:35%"></i></li>
+            <li><span>Jern</span><i style="--w:72%"></i></li>
+            <li><span>Fibre</span><i style="--w:58%"></i></li>
+            <li><span>C-vitamin</span><i style="--w:100%"></i></li>
+          </ul>
+        </div>
+        <div class="tile t-fast">
+          <h3>Faste</h3>
+          <p>Din egen fastetid, med nedtælling.</p>
+          <div class="fastring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42"/><circle cx="50" cy="50" r="42" class="p"/></svg><span>16:8</span></div>
+        </div>
+        <div class="tile t-remind">
+          <h3>Venlige påmindelser</h3>
+          <div class="notif"><span class="nicon"></span><div><b>Kalora</b><small>Husk at drikke et glas vand</small></div></div>
+          <div class="notif two"><span class="nicon"></span><div><b>Kalora</b><small>Har du skrevet frokosten ind?</small></div></div>
+        </div>
+        <div class="tile t-dark" id="darkTile">
+          <h3>Lys eller mørk</h3>
+          <p>Appen følger din iPhone, eller du vælger selv.</p>
+          <button type="button" class="toggle" id="darkToggle" aria-pressed="false"><span></span>Prøv mørk tilstand</button>
+        </div>
+        <div class="tile t-week">
+          <h3>Flere kalorier i weekenden</h3>
+          <p>Giv dig selv lidt mere lørdag og søndag, og lidt mindre i hverdagen.</p>
+          <div class="weekbars"><i style="--h:62%"></i><i style="--h:62%"></i><i style="--h:62%"></i><i style="--h:62%"></i><i style="--h:70%"></i><i class="we" style="--h:88%"></i><i class="we" style="--h:88%"></i></div>
+          <div class="weeklbl"><span>M</span><span>T</span><span>O</span><span>T</span><span>F</span><span>L</span><span>S</span></div>
+        </div>
+      </div>
+      <p class="more"><a href="/funktioner/">Se alle funktioner →</a></p>
+    </div>
+  </section>
+
+  <!-- 7. Bytte-beregner -->
+  <section class="swap-sec" id="bytte">
+    <div class="wrap">
+      <p class="kicker">Små bytte, stor forskel</p>
+      <h2>Du behøver ikke vende dit liv på hovedet</h2>
+      <p class="sub">Vælg de bytte, du godt kunne leve med.</p>
       <div class="swaps" id="swaps">
         <button type="button" class="swap" aria-pressed="true" data-kcal="190"><span class="box" aria-hidden="true">✓</span><span class="from">Sodavand med sukker, 0,5 l</span><span class="to">Sodavand uden sukker</span><span class="save">−190 kcal</span></button>
-        <button type="button" class="swap" aria-pressed="false" data-kcal="164"><span class="box" aria-hidden="true">✓</span><span class="from">En croissant</span><span class="to">En skive rugbrød</span><span class="save">−164 kcal</span></button>
+        <button type="button" class="swap" aria-pressed="true" data-kcal="164"><span class="box" aria-hidden="true">✓</span><span class="from">En croissant</span><span class="to">En skive rugbrød</span><span class="save">−164 kcal</span></button>
         <button type="button" class="swap" aria-pressed="false" data-kcal="150"><span class="box" aria-hidden="true">✓</span><span class="from">En lille pose chips, 50 g</span><span class="to">En skål vindruer, 150 g</span><span class="save">−150 kcal</span></button>
         <button type="button" class="swap" aria-pressed="false" data-kcal="108"><span class="box" aria-hidden="true">✓</span><span class="from">Mayonnaise, 20 g</span><span class="to">Kalorielet mayonnaise</span><span class="save">−108 kcal</span></button>
         <button type="button" class="swap" aria-pressed="false" data-kcal="70"><span class="box" aria-hidden="true">✓</span><span class="from">Et glas sødmælk</span><span class="to">Et glas skummetmælk</span><span class="save">−70 kcal</span></button>
@@ -189,115 +292,53 @@
           <div class="big" id="swapWeek">0 <span>kcal mindre om ugen</span></div>
           <p id="swapYear">–</p>
         </div>
-        <div class="chips" role="group" aria-label="Hvor mange dage om ugen" id="swapDays">
-          <button type="button" class="chip" data-v="3" aria-pressed="false">3 dage</button>
-          <button type="button" class="chip" data-v="5" aria-pressed="true">5 dage</button>
-          <button type="button" class="chip" data-v="7" aria-pressed="false">Hver dag</button>
+        <div class="seg dark" role="group" aria-label="Hvor mange dage om ugen" id="swapDays">
+          <button type="button" data-v="3" aria-pressed="false">3 dage</button>
+          <button type="button" data-v="5" aria-pressed="true">5 dage</button>
+          <button type="button" data-v="7" aria-pressed="false">Hver dag</button>
         </div>
       </div>
-      <p class="small">Kalorier fra Den Danske Fødevaredatabase (DTU). Portionerne er eksempler. I Kalora ser du tallene for præcis det, du spiser.</p>
+      <p class="small">Kalorier fra Den Danske Fødevaredatabase (DTU). Portionerne er eksempler.</p>
     </div>
   </section>
 
-  <!-- Madfoto -->
-  <section class="band reveal" id="madfoto">
-    <div class="wrap split">
-      <div>
-        <p class="kicker">Hurtigst: Madfoto</p>
-        <h2>Tag et billede. Få kalorierne.</h2>
-        <p class="sub">Det sværeste ved at tabe sig er at blive ved. Derfor skal det tage sekunder, ikke minutter. Tag et billede af tallerkenen, så finder Kalora ud af, hvad der er på den.</p>
-        <ul class="ticks"><li>Hver ting for sig, fx laks, kartofler og smør</li><li>Ret grammene med ét tryk, så følger tallene med</li><li>Gem hele måltidet i dagbogen på én gang</li></ul>
-        <p class="small">Madfoto er et skøn, især portionens størrelse. Derfor ser du altid listen og kan rette den, før noget bliver gemt. Madfoto er en del af Kalora Premium.</p>
-      </div>
-      <div class="phone small-phone"><img src="/img/foto.webp" alt="Madfoto i Kalora: laks, kartofler, broccoli og smør med kalorier, protein, fedt og kulhydrat" loading="lazy" width="585" height="1266"></div>
-    </div>
-  </section>
-
-  <!-- Sådan virker det -->
-  <section class="reveal" id="saadan">
+  <!-- 8. Rigtige tal -->
+  <section class="src-sec">
     <div class="wrap">
-      <h2>Sådan taber du dig med Kalora</h2>
-      <p class="sub">Tre trin. Resten klarer appen. <a href="/saadan-virker-det/">Læs mere om, hvordan det virker</a>.</p>
-      <ol class="steps">
-        <li><span class="num">1</span><h3>Sæt dit mål</h3><p>Skriv din vægt, din målvægt og hvor hurtigt du vil tabe dig. Så får du et dagligt kaloriemål og et proteinmål, der holder dig mæt.</p></li>
-        <li><span class="num">2</span><h3>Skriv maden ind</h3><p>Billede, stregkode eller søgning. Din faste morgenmad gemmer du som en ret, så er den ét tryk næste gang.</p></li>
-        <li><span class="num">3</span><h3>Se det virke</h3><p>Vej dig, når du har lyst. Grafen viser, hvordan det går, og hvornår du cirka når din målvægt.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- Se appen i faner -->
-  <section class="reveal" id="appen">
-    <div class="wrap">
-      <h2>Se appen</h2>
-      <p class="sub">Tryk dig igennem. <a href="/funktioner/">Se alle funktioner</a>.</p>
-      <div class="pain">
-        <div>
-          <div class="tabs" role="tablist" id="appTabs">
-        <button type="button" class="chip" role="tab" aria-pressed="true" data-i="0">I dag</button>
-        <button type="button" class="chip" role="tab" aria-pressed="false" data-i="1">Dagbog</button>
-        <button type="button" class="chip" role="tab" aria-pressed="false" data-i="2">Vægt og mål</button>
-        <button type="button" class="chip" role="tab" aria-pressed="false" data-i="3">Søg</button>
-        <button type="button" class="chip" role="tab" aria-pressed="false" data-i="4">Vitaminer</button>
-        <button type="button" class="chip" role="tab" aria-pressed="false" data-i="5">Påmindelser</button>
-      </div>
-          <div class="pain-panel" id="appPanel" aria-live="polite"></div>
-        </div>
-        <div class="phone small-phone"><img class="swap-img" id="appImg" src="/img/home.webp" alt="" loading="lazy" width="585" height="1266"></div>
+      <p class="kicker">Rigtige tal, ikke gætværk</p>
+      <h2>Du skal kunne stole på tallene</h2>
+      <p class="sub">Kalora gætter ikke på, hvad en vare indeholder. Under hver vare står, hvor tallene kommer fra.</p>
+      <div class="srcs">
+        <div class="src"><span class="tag">DTU</span><h3>Den Danske Fødevaredatabase</h3><p>Frugt, grønt, kød, mejeri og brød, med vitaminer og mineraler. Fra DTU Fødevareinstituttet.</p></div>
+        <div class="src"><span class="tag">OFF</span><h3>Open Food Facts</h3><p>Varer med stregkode fra butikkerne, fra en åben database, som alle kan bidrage til.</p></div>
+        <div class="src"><span class="tag">Dig</span><h3>Pakkens deklaration</h3><p>Findes en vare ikke, aflæser appen tallene fra pakken. Du tjekker dem, før de gemmes.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Hvor tallene kommer fra -->
-  <section class="band reveal">
-    <div class="wrap split">
-      <div>
-        <h2>Rigtige tal, ikke gætværk</h2>
-        <p class="sub">Når du taber dig, skal du kunne stole på tallene. Kalora gætter ikke på, hvad en vare indeholder. Madfoto er det eneste skøn, og det retter du selv, før det gemmes.</p>
-        <ul class="sources">
-          <li><span class="tag">DTU</span><div><strong>Den Danske Fødevaredatabase</strong><br>Basisvarer som frugt, grønt, kød, mejeri og brød, med vitaminer og mineraler. Fra DTU Fødevareinstituttet.</div></li>
-          <li><span class="tag">OFF</span><div><strong>Open Food Facts</strong><br>Varer med stregkode fra butikkerne, fra en åben database, som alle kan bidrage til.</div></li>
-          <li><span class="tag">Dig</span><div><strong>Pakkens deklaration</strong><br>Findes en vare ikke, aflæser appen tallene fra pakken. Du tjekker dem, før de gemmes.</div></li>
-        </ul>
-      </div>
-      <div class="phone small-phone"><img src="/img/product.webp" alt="En vare i Kalora med kalorier, protein, fedt og kulhydrat og kilden til tallene" loading="lazy" width="585" height="1266"></div>
-    </div>
-  </section>
-
-  <!-- En dag med Kalora -->
-  <section class="reveal">
+  <!-- 9. Guides -->
+  <section class="guides-sec">
     <div class="wrap">
-      <h2>En dag med Kalora</h2>
-      <p class="sub">Sådan ser det typisk ud. Det tager et par minutter i alt.</p>
-      <ol class="day">
-        <li><time>07:30</time><div><h3>Vej dig og spis morgenmad</h3><p>Skriv vægten ind på et sekund. Morgenmaden er gemt som en ret, så den er ét tryk.</p></div></li>
-        <li><time>11:00</time><div><h3>Et lille skub</h3><p>Kalora minder dig om at drikke vand. Tryk på et glas, så er det skrevet ind.</p></div></li>
-        <li><time>12:00</time><div><h3>Frokost fra butikken</h3><p>Scan stregkoden på salaten, vælg hvor meget du spiste, færdig.</p></div></li>
-        <li><time>17:00</time><div><h3>En gåtur</h3><p>Skridtene kommer fra din iPhone. Vil du, giver de lidt ekstra kalorier til aftensmaden.</p></div></li>
-        <li><time>18:30</time><div><h3>Aftensmad</h3><p>Tag et billede af tallerkenen, ret mængderne, og tryk Tilføj. Forsiden viser, hvor meget du har tilbage.</p></div></li>
-        <li><time>21:00</time><div><h3>Afslut dagen</h3><p>Se, hvad du vejer om 4 uger, hvis alle dage var som i dag.</p></div></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- Guides -->
-  <section class="band reveal">
-    <div class="wrap">
-      <h2>Guides til dit vægttab</h2>
-      <p class="sub">Korte guides på dansk, uden kure og pulver.</p>
-      <div class="guides">
-        <a class="card" href="/guides/kalorier-vaegttab/"><p class="kicker">Vægttab</p><h3>Hvor mange kalorier skal du spise for at tabe dig?</h3><p>Sådan finder du dit tal, med eksempler for kvinder og mænd.</p><span class="read">Læs guiden →</span></a>
-        <a class="card" href="/guides/maettende-mad/"><p class="kicker">Mæt</p><h3>Mad der mætter, men har få kalorier</h3><p>Spis mere og bliv mæt, uden at kalorierne løber løbsk.</p><span class="read">Læs guiden →</span></a>
-        <a class="card" href="/guides/protein/"><p class="kicker">Kost</p><h3>Hvor meget protein skal du have?</h3><p>Hvorfor protein betyder ekstra meget, når du vil tabe dig.</p><span class="read">Læs guiden →</span></a>
+      <p class="kicker">Guides</p>
+      <h2>Lær det vigtigste på fem minutter</h2>
+      <div class="guides g3">
+        <a class="card" href="/guides/kalorier-vaegttab/"><p class="kicker">Vægttab</p><h3>Hvor mange kalorier skal du spise for at tabe dig?</h3><span class="read">Læs guiden →</span></a>
+        <a class="card" href="/guides/maettende-mad/"><p class="kicker">Mæt</p><h3>Mad der mætter, men har få kalorier</h3><span class="read">Læs guiden →</span></a>
+        <a class="card" href="/guides/protein/"><p class="kicker">Kost</p><h3>Hvor meget protein skal du have?</h3><span class="read">Læs guiden →</span></a>
       </div>
       <p class="more"><a href="/guides/">Se alle guides →</a></p>
     </div>
   </section>
 
-  <!-- Spørgsmål -->
-  <section class="reveal">
-    <div class="wrap narrow">
-      <h2>Spørgsmål og svar</h2>
+  <!-- 10. Spørgsmål -->
+  <section class="faq-sec">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="kicker">Spørgsmål og svar</p>
+        <h2>Godt at vide</h2>
+        <p class="sub">Findes dit spørgsmål ikke her, så skriv til <a href="mailto:support@kalora.dk">support@kalora.dk</a>.</p>
+      </div>
+      <div class="faq">
       <details>
         <summary>Er Kalora gratis?</summary>
         <p>Ja, du kan bruge Kalora gratis. Det koster ikke noget at skrive mad ind, scanne varer eller følge din vægt.</p>
@@ -334,18 +375,20 @@
         <summary>Findes Kalora til Android?</summary>
         <p>Ikke endnu. Kalora er lige nu kun til iPhone.</p>
       </details>
-      <p class="more"><a href="/support/">Flere spørgsmål og kontakt →</a></p>
+      </div>
     </div>
   </section>
 
-  <!-- Afslutning -->
-  <section>
+  <!-- 11. Afslutning -->
+  <section class="final-sec">
     <div class="wrap">
-      <div class="final">
-        <img src="/img/icon-180.png" alt="" width="72" height="72">
-        <h2>Dit første skridt tager to minutter</h2>
-        <p>Sæt dit mål, skriv dagens første måltid ind, og se hvor du står.</p>
-        <a class="btn light" href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora gratis</a>
+      <div class="final3">
+        <div class="final3-text">
+          <h2>Dit første skridt tager to minutter</h2>
+          <p>Sæt dit mål, skriv dagens første måltid ind, og se hvor du står.</p>
+          <a class="btn light" href="https://testflight.apple.com/join/fdUu19ya">Prøv Kalora gratis</a>
+        </div>
+        <div class="device peek" aria-hidden="true"><img src="/img/diary.webp" alt="" loading="lazy" width="585" height="1266"></div>
       </div>
     </div>
   </section>
@@ -357,99 +400,72 @@
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var nf = new Intl.NumberFormat('da-DK');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function fill(r) { r.style.setProperty('--p', ((r.value - r.min) / (r.max - r.min) * 100) + '%'); }
-  function pick(group, btn) { group.querySelectorAll('.chip').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); }); }
+  function press(group, btn) { group.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); }); }
 
-  /* Målkortet */
+  /* Målberegner */
   var now = $('gNow'), goal = $('gGoal'), pace = 0.5;
   function kg(v) { return nf.format(v) + ' <small>kg</small>'; }
   function addWeeks(w) { var d = new Date(); d.setDate(d.getDate() + Math.round(w * 7)); return d; }
-  function month(d) { return d.toLocaleDateString('da-DK', { month: 'short', year: 'numeric' }); }
+  function curve() {
+    var pts = [], N = 28, x0 = 20, x1 = 380, yTop = 30, yGoal = 150;
+    for (var i = 0; i <= N; i++) {
+      var t = i / N, k = 1 - Math.pow(1 - t, 1.35);
+      var wob = (i && i < N) ? Math.sin(i * 2.3) * 2.4 * (1 - t) : 0;
+      pts.push([x0 + (x1 - x0) * t, yTop + (yGoal - yTop) * k + wob]);
+    }
+    var d = pts.map(function (p, i) { return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join(' ');
+    var line = $('gLine'); line.setAttribute('d', d);
+    $('gArea').setAttribute('d', d + ' L380 190 L20 190 Z');
+    if (!reduce) { var len = line.getTotalLength(); line.style.transition = 'none'; line.style.strokeDasharray = len; line.style.strokeDashoffset = len; line.getBoundingClientRect(); line.style.transition = ''; line.style.strokeDashoffset = 0; }
+  }
+  var lastShape = '';
   function upd() {
     var n = +now.value;
     goal.max = n - 1;
     if (+goal.value > n - 1) goal.value = n - 1;
     var g = +goal.value;
     $('oNow').innerHTML = kg(n); $('oGoal').innerHTML = kg(g);
+    $('gNowLbl').textContent = nf.format(n) + ' kg'; $('gGoalLbl').textContent = nf.format(g) + ' kg';
     fill(now); fill(goal);
-    var weeks = (n - g) / pace;
-    $('gDate').textContent = addWeeks(weeks).toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
-    curve(n, g, weeks);
-    var m1 = Math.max(g, n - pace * 4.3), m3 = Math.max(g, n - pace * 13);
+    var weeks = (n - g) / pace, end = addWeeks(weeks);
+    $('gDate').textContent = end.toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
+    $('gEndLbl').textContent = end.toLocaleDateString('da-DK', { month: 'short', year: 'numeric' });
     var r = function (x) { return nf.format(Math.round(x * 10) / 10); };
     $('gMiles').innerHTML =
-      '<li><strong>' + r(m1) + ' kg</strong>om 1 måned</li>' +
-      '<li><strong>' + r(m3) + ' kg</strong>om 3 måneder</li>' +
+      '<li><strong>' + r(Math.max(g, n - pace * 4.3)) + ' kg</strong>om 1 måned</li>' +
+      '<li><strong>' + r(Math.max(g, n - pace * 13)) + ' kg</strong>om 3 måneder</li>' +
       '<li><strong>' + Math.ceil(weeks) + ' uger</strong>til målet</li>';
-  }
-  function curve(n, g, weeks) {
-    var pts = [], N = 24, x0 = 12, x1 = 308, yTop = 22, yGoal = 96;
-    for (var i = 0; i <= N; i++) {
-      var t = i / N, k = 1 - Math.pow(1 - t, 1.35);
-      var wob = Math.sin(i * 1.9) * 1.6 * (1 - t) * (i % 2 ? 1 : -0.6);
-      pts.push([x0 + (x1 - x0) * t, yTop + (yGoal - yTop) * k + (i && i < N ? wob : 0)]);
-    }
-    var d = pts.map(function (p, i) { return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join(' ');
-    var line = $('gLine'); line.setAttribute('d', d);
-    $('gArea').setAttribute('d', d + ' L308 120 L12 120 Z');
-    var len = line.getTotalLength(); line.style.strokeDasharray = len; line.style.strokeDashoffset = len;
-    line.getBoundingClientRect(); line.style.strokeDashoffset = 0;
+    var shape = pace + '';
+    if (shape !== lastShape) { lastShape = shape; curve(); }
   }
   now.addEventListener('input', upd); goal.addEventListener('input', upd);
-  $('pace').addEventListener('click', function (e) { var b = e.target.closest('.chip'); if (!b) return; pace = +b.dataset.v; pick(this, b); upd(); });
+  now.addEventListener('change', curve); goal.addEventListener('change', curve);
+  $('pace').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; pace = +b.dataset.v; press(this, b); upd(); });
   upd();
 
-  /* Faner med billede */
-  function tabs(tabsId, panelId, imgId, data) {
-    var t = $(tabsId), p = $(panelId), img = $(imgId);
-    function show(i) {
-      var d = data[i];
-      p.innerHTML = '<h3>' + d.h + '</h3><p>' + d.p + '</p>' + (d.l ? '<ul class="ticks">' + d.l.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>' : '');
-      if (img.getAttribute('src') !== d.img) { img.style.opacity = 0; setTimeout(function () { img.src = d.img; img.alt = d.alt; img.style.opacity = 1; }, 180); }
-      img.alt = d.alt;
-    }
-    t.addEventListener('click', function (e) { var b = e.target.closest('.chip'); if (!b) return; pick(t, b); show(+b.dataset.i); });
-    data.forEach(function (d) { var im = new Image(); im.src = d.img; });
-    show(0);
+  /* Forsiden: let parallax på de svævende kort */
+  var stage = $('stage');
+  if (!reduce && window.matchMedia('(hover: hover)').matches) {
+    stage.addEventListener('mousemove', function (e) {
+      var r = stage.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      stage.querySelectorAll('.float').forEach(function (f) { var d = +f.dataset.depth; f.style.translate = (x * d) + 'px ' + (y * d) + 'px'; });
+      stage.style.setProperty('--rx', (-y * 4) + 'deg'); stage.style.setProperty('--ry', (x * 6) + 'deg');
+    });
+    stage.addEventListener('mouseleave', function () { stage.querySelectorAll('.float').forEach(function (f) { f.style.translate = ''; }); stage.style.setProperty('--rx', '0deg'); stage.style.setProperty('--ry', '0deg'); });
   }
-  tabs('painTabs', 'painPanel', 'painImg', [
-    { h: 'Protein, der holder dig mæt', p: 'Når du vil tabe dig, sætter Kalora et højere proteinmål. Protein mætter mere end de fleste andre ting, så du har lettere ved at holde dig til dit mål.', l: ['Se protein, fedt og kulhydrat i gram', 'Få at vide, hvad du mangler i dag', 'Guides til mad, der mætter med få kalorier'], img: '/img/macros.webp', alt: 'Makroer i Kalora: protein, fedt og kulhydrat i gram' },
-    { h: 'Sekunder, ikke minutter', p: 'Det er de små ting, der gør, at man bliver ved. Derfor er det hurtigt at skrive mad ind.', l: ['Tag et billede af tallerkenen', 'Scan stregkoden på pakken', 'Gem din faste morgenmad som en ret og tilføj den med ét tryk', 'Kopiér gårsdagens frokost'], img: '/img/foto.webp', alt: 'Madfoto i Kalora' },
-    { h: 'Se, at det virker', p: 'Motivation kommer af at se fremskridt. Kalora viser din vægt mod målet og hvornår du cirka er i mål, hvis du holder tempoet.', l: ['Vægtgraf med din målvægt', 'Afslut dagen og se, hvad du vejer om 4 uger', 'Ugeopsummering og antal dage i træk, der holder dig i gang'], img: '/img/weight.webp', alt: 'Vægtgraf i Kalora med målvægt' },
-    { h: 'Ingen mad er forbudt', p: 'Kalora fortæller dig ikke, hvad du må spise. Den viser, hvor meget der er plads til, så du selv bestemmer.', l: ['Se, hvor mange kalorier du har tilbage i dag', 'Giv dig selv flere kalorier i weekenden og færre i hverdagen', 'Fordel kalorierne mellem måltiderne, som det passer dig'], img: '/img/diary.webp', alt: 'Dagbogen i Kalora med dagens måltider' },
-    { h: 'Ét tal at holde øje med', p: 'Du behøver ikke være ekspert. Forsiden viser, hvor mange kalorier du har tilbage i dag, og om du får nok protein.', l: ['Dit mål regnes ud fra din krop og dit tempo', 'Justér målet, hvis det går for hurtigt eller langsomt', 'Korte forklaringer på dansk, også om vitaminer'], img: '/img/home.webp', alt: 'Kaloras forside med kalorier tilbage i dag' }
-  ]);
-  tabs('appTabs', 'appPanel', 'appImg', [
-    { h: 'Dit overblik', p: 'Kalorier tilbage i dag, protein, fedt og kulhydrat, vand og skridt. Du vælger selv, hvad der står på forsiden.', img: '/img/home.webp', alt: 'Kaloras forside' },
-    { h: 'Dagbogen', p: 'Morgenmad, frokost, aftensmad og snacks. Ret, flyt eller kopiér et måltid til en anden dag.', img: '/img/diary.webp', alt: 'Dagbogen i Kalora' },
-    { h: 'Vægt og mål', p: 'Skriv vægten ind, når du har lyst. Grafen viser vejen mod din målvægt.', img: '/img/weight.webp', alt: 'Vægtgraf i Kalora' },
-    { h: 'Søg blandt danske varer', p: 'Skriv "rugbrød" eller navnet på en vare fra butikken. Vælg, hvor meget du spiste, så er det skrevet ind.', img: '/img/search.webp', alt: 'Søgning i Kalora' },
-    { h: '11 vitaminer og mineraler', p: 'Plus fibre, sukker, mættet fedt og salt. Med korte forklaringer på dansk.', img: '/img/nutrients.webp', alt: 'Vitaminer og mineraler i Kalora' },
-    { h: 'Venlige påmindelser', p: 'Om at skrive mad ind og drikke vand, på de tider du vælger.', img: '/img/reminders.webp', alt: 'Påmindelser i Kalora' }
-  ]);
 
-  /* Bytte-beregner */
-  var days = 5, shown = 0;
-  function total() {
-    var sum = 0;
-    $('swaps').querySelectorAll('.swap[aria-pressed=true]').forEach(function (b) { sum += +b.dataset.kcal; });
-    var week = sum * days, target = week, start = shown, t0 = null;
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function step(ts) {
-      if (!t0) t0 = ts; var k = reduce ? 1 : Math.min(1, (ts - t0) / 400);
-      shown = Math.round(start + (target - start) * k);
-      $('swapWeek').innerHTML = nf.format(shown) + ' <span>kcal mindre om ugen</span>';
-      if (k < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-    $('swapYear').textContent = week ? 'Det er ' + nf.format(week * 52) + ' kcal på et år, uden en eneste kur.' : 'Vælg et eller flere bytte ovenfor.';
+  /* Sådan virker det: skift billede, når et trin er i midten */
+  var steps = document.querySelectorAll('.step'), shots = $('storyDevice').querySelectorAll('img');
+  function activate(i) { steps.forEach(function (s, j) { s.classList.toggle('active', j === i); }); shots.forEach(function (s, j) { s.classList.toggle('on', j === i); }); }
+  if ('IntersectionObserver' in window) {
+    var so = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) activate(+x.target.dataset.img); }); }, { rootMargin: '-45% 0px -45% 0px' });
+    steps.forEach(function (s) { so.observe(s); });
   }
-  $('swaps').addEventListener('click', function (e) { var b = e.target.closest('.swap'); if (!b) return; b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); total(); });
-  $('swapDays').addEventListener('click', function (e) { var b = e.target.closest('.chip'); if (!b) return; days = +b.dataset.v; pick(this, b); total(); });
-  total();
 
   /* Demo: byg en dag */
-  var GOAL = 1800, PGOAL = 120, items = [], C = 2 * Math.PI * 52;
+  var GOAL = 1800, PGOAL = 120, items = [], C = 2 * Math.PI * 52, uid = 0;
   var ring = $('dRing'); ring.style.strokeDasharray = C; ring.style.strokeDashoffset = C;
   function render() {
     var k = 0, p = 0; items.forEach(function (x) { k += x.k; p += x.p; });
@@ -473,43 +489,81 @@
       return '<li><span class="m">' + x.m + '</span><span class="n">' + x.n + '</span><span class="k">' + x.k + '</span><button type="button" aria-label="Fjern ' + x.n + '" data-id="' + x.id + '">×</button></li>';
     }).join('');
   }
-  var uid = 0;
   $('foods').addEventListener('click', function (e) {
     var b = e.target.closest('.food'); if (!b) return;
     items.push({ id: ++uid, m: b.dataset.m, n: b.dataset.n, k: +b.dataset.k, p: +b.dataset.p });
-    b.classList.remove('pop'); b.offsetWidth; b.classList.add('pop');
+    b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop');
     render();
   });
   $('dList').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; items = items.filter(function (x) { return x.id !== +b.dataset.id; }); render(); });
   $('dReset').addEventListener('click', function () { items = []; render(); });
+  ['Havregryn med mælk', '2 rugbrød med kyllingepålæg'].forEach(function (n) { var b = document.querySelector('.food[data-n="' + n + '"]'); items.push({ id: ++uid, m: b.dataset.m, n: n, k: +b.dataset.k, p: +b.dataset.p }); });
   render();
 
+  /* Har du prøvet før? */
+  var pains = [
+    { h: 'Protein, der holder dig mæt', p: 'Når du vil tabe dig, sætter Kalora et højere proteinmål. Protein mætter mere end de fleste andre ting, så det bliver lettere at holde sig til målet.', l: ['Protein, fedt og kulhydrat i gram', 'Se, hvad du mangler i dag', 'Guide til mad, der mætter med få kalorier'] },
+    { h: 'Sekunder, ikke minutter', p: 'Det er de små ting, der gør, at man bliver ved. Derfor er det hurtigt at skrive mad ind.', l: ['Tag et billede af tallerkenen', 'Scan stregkoden på pakken', 'Gem din faste morgenmad som en ret', 'Kopiér gårsdagens frokost'] },
+    { h: 'Se, at det virker', p: 'Motivation kommer af at se fremskridt. Kalora viser din vægt mod målet og hvornår du cirka er i mål.', l: ['Vægtgraf med din målvægt', 'Afslut dagen og se, hvad du vejer om 4 uger', 'Ugeopsummering og dage i træk'] },
+    { h: 'Ingen mad er forbudt', p: 'Kalora fortæller dig ikke, hvad du må spise. Den viser, hvor meget der er plads til, så du selv bestemmer.', l: ['Se, hvor mange kalorier du har tilbage', 'Flere kalorier i weekenden, færre i hverdagen', 'Fordel kalorierne mellem måltiderne'] },
+    { h: 'Ét tal at holde øje med', p: 'Du behøver ikke være ekspert. Forsiden viser, hvor mange kalorier du har tilbage i dag, og om du får nok protein.', l: ['Dit mål regnes ud fra din krop og dit tempo', 'Justér målet, hvis det går for hurtigt eller langsomt', 'Korte forklaringer på dansk'] }
+  ];
+  var pt = $('painTabs'), pp = $('painPanel');
+  function showPain(i) {
+    var d = pains[i];
+    pp.innerHTML = '<h3>' + d.h + '</h3><p>' + d.p + '</p><ul class="ticks">' + d.l.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>';
+    pp.classList.remove('fade'); void pp.offsetWidth; pp.classList.add('fade');
+  }
+  pt.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; pt.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); }); showPain(+b.dataset.i); });
+  showPain(0);
+
+  /* Vand */
+  $('glasses').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    var all = [].slice.call(this.children), i = all.indexOf(b), cur = this.querySelectorAll('[aria-pressed=true]').length;
+    var n = cur === i + 1 ? i : i + 1;
+    all.forEach(function (g, j) { g.setAttribute('aria-pressed', j < n ? 'true' : 'false'); });
+    $('water').textContent = nf.format(n * 0.25);
+  });
+  /* Mørk tilstand i kortet */
+  $('darkToggle').addEventListener('click', function () { var on = this.getAttribute('aria-pressed') !== 'true'; this.setAttribute('aria-pressed', on); $('darkTile').classList.toggle('is-dark', on); this.lastChild.textContent = on ? 'Tilbage til lys' : 'Prøv mørk tilstand'; });
+
+  /* Bytte-beregner */
+  var days = 5, shown = 0;
+  function total() {
+    var sum = 0;
+    $('swaps').querySelectorAll('.swap[aria-pressed=true]').forEach(function (b) { sum += +b.dataset.kcal; });
+    var week = sum * days, start = shown, t0 = null;
+    function step(ts) {
+      if (!t0) t0 = ts; var k = reduce ? 1 : Math.min(1, (ts - t0) / 450);
+      shown = Math.round(start + (week - start) * k);
+      $('swapWeek').innerHTML = nf.format(shown) + ' <span>kcal mindre om ugen</span>';
+      if (k < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+    $('swapYear').textContent = week ? 'Det er ' + nf.format(week * 52) + ' kcal på et år, uden en eneste kur.' : 'Vælg et eller flere bytte ovenfor.';
+  }
+  $('swaps').addEventListener('click', function (e) { var b = e.target.closest('.swap'); if (!b) return; b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); total(); });
+  $('swapDays').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; days = +b.dataset.v; press(this, b); total(); });
+  total();
+
   /* Tal der tæller op */
-  var counters = document.querySelectorAll('[data-count]');
-  function countUp(el) {
-    var to = +el.dataset.count, suf = el.dataset.suffix || '', t0 = null;
-    if (!to) return;
-    function f(ts) { if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / 1100); k = 1 - Math.pow(1 - k, 3); el.textContent = nf.format(Math.round(to * k)) + suf; if (k < 1) requestAnimationFrame(f); }
-    requestAnimationFrame(f);
+  if (!reduce && 'IntersectionObserver' in window) {
+    var co = new IntersectionObserver(function (es) { es.forEach(function (x) {
+      if (!x.isIntersecting) return; co.unobserve(x.target);
+      var el = x.target, to = +el.dataset.count, t0 = null;
+      (function f(ts) { if (ts) { if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / 1100); k = 1 - Math.pow(1 - k, 3); el.textContent = nf.format(Math.round(to * k)); if (k >= 1) return; } requestAnimationFrame(f); })();
+    }); });
+    document.querySelectorAll('[data-count]').forEach(function (c) { co.observe(c); });
   }
 
-  /* Knap i bunden på mobil */
-  var mcta = $('mcta'), heroBtn = document.querySelector('.h-hero .btn');
+  /* Knap i bunden på mobil + skygge under menuen */
+  var mcta = $('mcta'), heroBtn = document.querySelector('.hero3 .btn');
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (es) { var show = !es[0].isIntersecting && es[0].boundingClientRect.top < 0; mcta.classList.toggle('show', show); mcta.setAttribute('aria-hidden', show ? 'false' : 'true'); mcta.querySelector('a').tabIndex = show ? 0 : -1; }).observe(heroBtn);
   }
-  /* Skygge under menuen, når man scroller */
   var top = document.querySelector('header.top');
   window.addEventListener('scroll', function () { top.classList.toggle('scrolled', window.scrollY > 8); }, { passive: true });
-
-  /* Rolig fremtoning */
-  var els = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }); }, { rootMargin: '0px 0px -60px 0px' });
-    els.forEach(function (el) { io.observe(el); });
-    var reduceM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!reduceM) { var co = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { countUp(x.target); co.unobserve(x.target); } }); }); counters.forEach(function (c) { co.observe(c); }); }
-  } else { els.forEach(function (el) { el.classList.add('in'); }); }
 })();
 </script>
 
