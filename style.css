@@ -1,3 +1,7 @@
+@font-face { font-family: "Jakarta"; src: url("/fonts/jakarta-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Jakarta"; src: url("/fonts/jakarta-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Jakarta"; src: url("/fonts/jakarta-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Jakarta"; src: url("/fonts/jakarta-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
 :root {
   color-scheme: light;
   --bg: #FFF6EE;
@@ -19,7 +23,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font: 17px/1.6 "Jakarta", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 a { color: var(--primary-text); }
 .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
@@ -276,3 +280,5 @@ details.groups .jump { margin-top: 12px; }
 .ftable details.fgroup summary span { color: var(--muted); font-weight: 500; font-size: 14px; }
 .ftable details.fgroup table { margin-top: 12px; }
 .ftable .gtitle { font-size: 20px; margin: 26px 0 12px; }
+
+h1, h2, h3 { letter-spacing: -0.02em; }
